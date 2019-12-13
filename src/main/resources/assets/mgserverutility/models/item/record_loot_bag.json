@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "mgserverutility:items/loot_bag_layer",
+        "layer1": "mgserverutility:items/loot_bag_record"
+    }
+}

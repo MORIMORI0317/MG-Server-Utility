@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mgserverutility:items/break_the_night_aran_remix_redalice_record"
+  }
+}

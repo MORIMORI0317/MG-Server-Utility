@@ -1,0 +1,16 @@
+[
+{
+  "modid": "mgserverutility",
+  "name": "MG Server Utility",
+  "description": "mg server mod",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["MORIMORI0317"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

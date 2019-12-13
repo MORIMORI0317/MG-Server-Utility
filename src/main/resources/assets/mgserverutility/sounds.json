@@ -1,0 +1,98 @@
+{
+     "cyclops": {
+    "sounds": [
+      {
+        "name": "mgserverutility:cyclopssnpi",
+        "stream": true
+      }
+    ]
+  },
+     "hologram": {
+    "sounds": [
+      {
+        "name": "mgserverutility:hologram_battle",
+        "stream": true
+      }
+    ]
+  },
+     "yattaze": {
+    "sounds": [
+      {
+        "name": "mgserverutility:yattaze",
+        "stream": true
+      }
+    ]
+  },
+     "marenol": {
+    "sounds": [
+      {
+        "name": "mgserverutility:marenol",
+        "stream": true
+      }
+    ]
+  },
+     "mopemope": {
+    "sounds": [
+      {
+        "name": "mgserverutility:mopemope",
+        "stream": true
+      }
+    ]
+  },
+     "break_the_night_aran_remix_redalice": {
+    "sounds": [
+      {
+        "name": "mgserverutility:break_the_night_aran_remix_redalice",
+        "stream": true
+      }
+    ]
+  },
+     "chaos_music": {
+    "sounds": [
+      {
+        "name": "mgserverutility:chaos_music",
+        "stream": true
+      }
+    ]
+  },
+     "sakanak": {
+    "sounds": [
+      {
+        "name": "mgserverutility:sakanak",
+        "stream": true
+      }
+    ]
+  },
+     "snake_eater": {
+    "sounds": [
+      {
+        "name": "mgserverutility:snake_eater",
+        "stream": true
+      }
+    ]
+  },
+     "yjintabyu-": {
+    "sounds": [
+      {
+        "name": "mgserverutility:yjintabyu-",
+        "stream": true
+      }
+    ]
+  },
+     "hakusinkaratebu": {
+    "sounds": [
+      {
+        "name": "mgserverutility:hakusinkaratebu",
+        "stream": true
+      }
+    ]
+  },
+     "ysyou": {
+    "sounds": [
+      {
+        "name": "mgserverutility:ysyou",
+        "stream": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+#Items#
+item.vanadium_steel_ingot.name=Vanadium Steel Ingot
+item.void_ingot.name=Void Ingot
+item.void_nugget.name=Void Nugget
+item.record_loot_bag.name=Record Loot Bag
+
+item.record.cyclops.desc=Cyclops Senpai Music
+item.record.hologram.desc=Essentialcraft's Hologram Battle Music
+item.record.marenol.desc=Marenol
+item.record.yattaze.desc=Yattaze
+item.record.mopemope.desc=MopeMope
+item.record.break_the_night_aran_remix_redalice.desc=Break the Night (Aran Remix)-REDALiCE
+item.record.chaos_music.desc=Chaos Music
+item.record.snake_eater.desc=Snake Eater
+item.record.sakanak.desc=Sin Takarajima
+item.record.yjintabyu-.desc=Y810 - YJ Interview
+item.record.ysyou.desc=Y810 - Chapter 4 Coma Ra*e! Senior Became YJ
+item.record.hakusinkaratebu.desc=Y810 - Chapter 3 Karate Club. Sexual tricks
+
+#Blocks#
+tile.vanadium_steel_block.name=Block of Vanadium Steel
+
+
+#Fluids#
+fluid.tconstruct.telekillalloy.name=Molten Telekill Alloy
+fluid.tconstruct.vanadiumsteel.name=Molten Vanadium Steel
+fluid.tconstruct.dataexpunged.name=Molten [DATA EXPUNGED]
+fluid.tconstruct.void.name=Molten Void
+
+#Materials#
+material.telekillalloy.name=Telekill Alloy
+material.vanadiumsteel.name=Vanadium Steel
+material.carbon.name=Carbon
+material.bladewood.name=Blade Wood
+material.dataexpunged.name=[DATA EXPUNGED]
+material.void.name=Void
+
+
+#Traits#
+modifier.scpproof.name=SCP Proof
+modifier.dataexpunged.name=[DATA EXPUNGED]
+modifier.voidnic.name=Void
+modifier.katasugi.name=Katasugi
+modifier.scpproof.desc=§oWip§r\nComing soon?
+modifier.dataexpunged.desc=§o[DATA EXPUNGED]...§r\nWith probability [DATA EXPUNGED].
+modifier.voidnic.desc=§oThe Void§r\nIt's void because it's void.
+modifier.katasugi.desc=§oKatasugiru Pi§r\nToo painful.
+
+#menu#
+menu.joinserver=Join SCP Server
+
+#CreativeTabs#
+itemGroup.mg_scp_tab=MG SERVER TAB
+
