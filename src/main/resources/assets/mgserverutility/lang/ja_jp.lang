@@ -2,7 +2,14 @@
 item.vanadium_steel_ingot.name=バナジウム鋼インゴット
 item.void_ingot.name=虚無インゴット
 item.void_nugget.name=虚無塊
-item.record_loot_bag.name=レコードのルートバッグ
+item.naquadah_alloy_ingot.name=ナクアダ合金インゴット
+item.tungsten_steel_ingot.name=タングステン鋼インゴット
+item.ultimet_ingot.name=アルタイムインゴット
+item.record_lottery_loot_bag.name=レコードのルートバッグ
+item.yj_lottery_loot_bag.name=野獣のルートバッグ
+item.inm_lottery_loot_bag.name=淫夢のルートバッグ
+item.naquadah_ingot.name=ナクアダインゴット
+
 
 item.record.cyclops.desc=サイクロプス先輩のメインテーマ曲
 item.record.hologram.desc=エッセンシャルクラフトのホログラムバトルの曲
@@ -18,12 +25,17 @@ item.record.hakusinkaratebu.desc=Y810 - ３章 空手部・性の裏技
 
 #Blocks#
 tile.vanadium_steel_block.name=バナジウム鋼ブロック
+tile.out_of_dimension_block.name=オウトオブディメンションブロック
 
 #Fluids#
 fluid.tconstruct.telekillalloy.name=溶けたテレキル合金
 fluid.tconstruct.vanadiumsteel.name=溶けたバナジウム鋼
 fluid.tconstruct.dataexpunged.name=溶けた[削除済]
 fluid.tconstruct.void.name=溶けた虚無
+fluid.tconstruct.naquadahalloy.name=溶けたナクアダ合金
+fluid.tconstruct.tungstensteel.name=溶けたタングステン鋼
+fluid.tconstruct.ultimet.name=溶けたアルタイム
+fluid.tconstruct.naquadah.name=溶けたナクアダ
 
 #Materials#
 material.telekillalloy.name=テレキル合金
@@ -38,7 +50,12 @@ material.dataexpunged.name=[削除済]
 material.dataexpunged.prefix=[削除済]の%s
 material.void.name=虚無
 material.void.prefix=虚無の%s
-
+material.naquadahalloy.name=ナクアダ合金
+material.naquadahalloy.prefix=ナクアダ合金の%s
+material.tungstensteel.name=タングステン鋼
+material.tungstensteel.prefix=タングステン鋼の%s
+material.ultimet.name=アルタイム
+material.ultimet.prefix=アルタイムの%s
 #Traits#
 modifier.scpproof.name=耐SCP
 modifier.dataexpunged.name=[削除済]

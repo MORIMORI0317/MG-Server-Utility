@@ -2,7 +2,14 @@
 item.vanadium_steel_ingot.name=Vanadium Steel Ingot
 item.void_ingot.name=Void Ingot
 item.void_nugget.name=Void Nugget
-item.record_loot_bag.name=Record Loot Bag
+item.record_lottery_loot_bag.name=Record Loot Bag
+item.yj_lottery_loot_bag.name=Yj Loot Bag
+item.inm_lottery_loot_bag.name=Inm Loot Bag
+item.naquadah_alloy_ingot.name=Naquadah Alloy Ingot
+item.tungsten_steel_ingot.name=Tungsten Steel Ingot
+item.ultimet_ingot.name=Ultime Ingot
+item.naquadah_ingot.name=Naquadah Ingot
+
 
 item.record.cyclops.desc=Cyclops Senpai Music
 item.record.hologram.desc=Essentialcraft's Hologram Battle Music
@@ -19,6 +26,7 @@ item.record.hakusinkaratebu.desc=Y810 - Chapter 3 Karate Club. Sexual tricks
 
 #Blocks#
 tile.vanadium_steel_block.name=Block of Vanadium Steel
+tile.out_of_dimension_block.name=Block of Out Of Dimension
 
 
 #Fluids#
@@ -26,6 +34,11 @@ fluid.tconstruct.telekillalloy.name=Molten Telekill Alloy
 fluid.tconstruct.vanadiumsteel.name=Molten Vanadium Steel
 fluid.tconstruct.dataexpunged.name=Molten [DATA EXPUNGED]
 fluid.tconstruct.void.name=Molten Void
+fluid.tconstruct.naquadahalloy.name=Molten Naquadah Alloy
+fluid.tconstruct.tungstensteel.name=Molten Tungsten Steel
+fluid.tconstruct.ultimet.name=Molten Ultime
+fluid.tconstruct.naquadah.name=Molten Naquadah
+
 
 #Materials#
 material.telekillalloy.name=Telekill Alloy
@@ -34,7 +47,9 @@ material.carbon.name=Carbon
 material.bladewood.name=Blade Wood
 material.dataexpunged.name=[DATA EXPUNGED]
 material.void.name=Void
-
+material.naquadahalloy.name=Naquadah Alloy
+material.tungstensteel.name=Tungsten Steel
+material.ultimet.name=Ultime
 
 #Traits#
 modifier.scpproof.name=SCP Proof

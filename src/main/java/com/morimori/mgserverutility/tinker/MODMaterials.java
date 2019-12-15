@@ -20,8 +20,11 @@ public class MODMaterials {
 	public static final Material carbon = new Material("carbon", 1973790);
 	public static final Material blade_wood = new Material("bladewood", 14338522);
 	public static final Material data_expunged = new Material("dataexpunged", 0);
-
 	public static final Material voidnic = new Material("void", 3083066);
+
+	public static final Material naquadahalloy = new Material("naquadahalloy", 2302755);
+	public static final Material tungstensteel = new Material("tungstensteel", 2964308);
+	public static final Material ultimet = new Material("ultimet", 9085907);
 
 	public static void preInit() {
 		TinkerRegistry.addMaterialStats(telekillalloy,
@@ -34,22 +37,22 @@ public class MODMaterials {
 		TinkerRegistry.addMaterialStats(telekillalloy, new BowMaterialStats(0.3f, 3.25f, 6f));
 
 		TinkerRegistry.addMaterialStats(vanadiumsteel,
-				new HeadMaterialStats(1440, 18, 17, HarvestLevels.OBSIDIAN),
-				new HandleMaterialStats(2.5f, 320),
-				new ExtraMaterialStats(80));
+				new HeadMaterialStats(1920, 8, 18, HarvestLevels.COBALT),
+				new HandleMaterialStats(3.5f, 2560),
+				new ExtraMaterialStats(5120));
 		TinkerRegistry.integrate(vanadiumsteel, MODFluids.MOLTEN_VANADIUM_STEEL, "VanadiumSteel").toolforge()
 				.preInit();
 		TinkerMaterials.materials.add(vanadiumsteel);
-		TinkerRegistry.addMaterialStats(vanadiumsteel, new BowMaterialStats(0.8f, 3.75f, 3f));
+		TinkerRegistry.addMaterialStats(vanadiumsteel, new BowMaterialStats(2, 64, 64));
 
 		TinkerRegistry.addMaterialStats(carbon,
 				new HeadMaterialStats(64, 1, 1, HarvestLevels.DIAMOND),
-				new HandleMaterialStats(1.5f, 5),
-				new ExtraMaterialStats(1));
+				new HandleMaterialStats(1.5f, -100),
+				new ExtraMaterialStats(50));
 		TinkerRegistry.integrate(carbon, "Carbon").toolforge()
 				.preInit();
 		TinkerMaterials.materials.add(carbon);
-		TinkerRegistry.addMaterialStats(carbon, new BowMaterialStats(1.5f, 0.5f, 1.5f));
+		TinkerRegistry.addMaterialStats(carbon, new BowMaterialStats(0.05f, 65536, 1));
 
 		TinkerRegistry.addMaterialStats(blade_wood,
 				new HeadMaterialStats(3500, 19, 10, HarvestLevels.COBALT),
@@ -78,6 +81,35 @@ public class MODMaterials {
 		TinkerMaterials.materials.add(voidnic);
 		TinkerRegistry.addMaterialStats(voidnic, new BowMaterialStats(0.3f, 3.25f, 6f));
 
+		TinkerRegistry.addMaterialStats(naquadahalloy,
+				new HeadMaterialStats(16384, 16, 16, 5),
+				new HandleMaterialStats(4.5f, 5000),
+				new ExtraMaterialStats(500));
+		TinkerRegistry.integrate(naquadahalloy, MODFluids.MOLTEN_NAQUADAH_ALLOY, "NaquadahAlloy").toolforge()
+				.preInit();
+		TinkerMaterials.materials.add(naquadahalloy);
+		TinkerRegistry.addMaterialStats(naquadahalloy, new BowMaterialStats(0.05f, 4, 666));
+
+		TinkerRegistry.addMaterialStats(tungstensteel,
+				new HeadMaterialStats(2560, 32, 16, COBALT),
+				new HandleMaterialStats(3.5f, 1000),
+				new ExtraMaterialStats(-100));
+		TinkerRegistry.integrate(tungstensteel, MODFluids.MOLTEN_TUNGSTEN_STEEL, "TungstenSteel").toolforge()
+				.preInit();
+		TinkerMaterials.materials.add(tungstensteel);
+		TinkerRegistry.addMaterialStats(tungstensteel, new BowMaterialStats(1, 5, 10));
+
+		TinkerRegistry.addMaterialStats(ultimet,
+				new HeadMaterialStats(4096, 16, 24, 5),
+				new HandleMaterialStats(4, 2560),
+				new ExtraMaterialStats(1000));
+		TinkerRegistry.integrate(ultimet, MODFluids.MOLTEN_ULTIMET, "Ultimet").toolforge()
+				.preInit();
+		TinkerMaterials.materials.add(ultimet);
+		TinkerRegistry.addMaterialStats(ultimet, new BowMaterialStats(0.05f, 1024, 256));
+
+
+
 	}
 
 	public static void init() {
@@ -98,6 +130,12 @@ public class MODMaterials {
 
 		voidnic.addCommonItems("Void");
 		voidnic.addTrait(MODTraits.Voidnic);
+
+		naquadahalloy.addCommonItems("NaquadahAlloy");
+
+		tungstensteel.addCommonItems("TungstenSteel");
+
+		ultimet.addCommonItems("Ultimet");
 
 	}
 

@@ -94,5 +94,21 @@
         "stream": true
       }
     ]
+  },
+     "kongyo": {
+    "sounds": [
+      {
+        "name": "mgserverutility:kongyo",
+        "stream": true
+      }
+    ]
+  },
+     "ievan_polkka": {
+    "sounds": [
+      {
+        "name": "mgserverutility:ievan_polkka",
+        "stream": true
+      }
+    ]
   }
 }

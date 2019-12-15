@@ -3,6 +3,7 @@ package com.morimori.mgserverutility.handler;
 import com.morimori.mgserverutility.MGServerUtility;
 import com.morimori.mgserverutility.MGSoundEvents;
 import com.morimori.mgserverutility.blocks.MODBlocks;
+import com.morimori.mgserverutility.items.ItemAnyIngot;
 import com.morimori.mgserverutility.items.MODItems;
 
 import net.minecraft.block.Block;
@@ -77,9 +78,19 @@ public class RegisterHandler {
 	@SubscribeEvent
 	public static void registerModels(ModelRegistryEvent event) {
 		MODItems.registerItemList().forEach(i -> {
-			MGServerUtility.LOGGER.info("Registing ItemModel " + i.getRegistryName());
-			ModelLoader.setCustomModelResourceLocation(i, 0,
-					new ModelResourceLocation(i.getRegistryName(), "inventory"));
+
+			if (!(i instanceof ItemAnyIngot)) {
+				MGServerUtility.LOGGER.info("Registing ItemModel " + i.getRegistryName());
+				ModelLoader.setCustomModelResourceLocation(i, 0,
+						new ModelResourceLocation(i.getRegistryName(), "inventory"));
+			}
+
+			if (i instanceof ItemAnyIngot) {
+				MGServerUtility.LOGGER.info("Registing AnyIngotItemModel " + i.getRegistryName());
+				ModelLoader.setCustomModelResourceLocation(i, 0,
+						new ModelResourceLocation(MGServerUtility.MODID + ":any_ingot", "inventory"));
+			}
+
 		});
 
 		MODBlocks.registerBlockList().forEach(i -> {

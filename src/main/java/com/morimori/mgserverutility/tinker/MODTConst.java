@@ -39,5 +39,9 @@ public class MODTConst {
 				new FluidStack(MainInit.mazai, 10),
 				new FluidStack(MainInit.coffee, 10));
 
+		TinkerRegistry.integrate(MODFluids.MOLTEN_NAQUADAH, "Naquadah").toolforge()
+		.preInit();
+
+
 	}
 }

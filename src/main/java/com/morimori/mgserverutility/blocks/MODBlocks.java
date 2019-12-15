@@ -18,6 +18,14 @@ public class MODBlocks {
 			"vanadium_steel_block").setHardness(1.5f).setResistance(3).setCreativeTab(MODCreativeTab.MGTAB)
 			.setUnlocalizedName("vanadium_steel_block");
 
+	public static Block OOD_BLOCK = new Block(Material.IRON).setRegistryName(MGServerUtility.MODID,
+			"out_of_dimension_block").setHardness(1.5f).setResistance(3).setCreativeTab(MODCreativeTab.MGTAB)
+			.setUnlocalizedName("out_of_dimension_block");
+
+	public static Block TEST_BLOCK = new BlockTest(Material.IRON).setRegistryName(MGServerUtility.MODID,
+			"test_block").setHardness(1.5f).setResistance(3).setCreativeTab(MODCreativeTab.MGTAB)
+			.setUnlocalizedName("test_block");
+
 	public static Block MOLTEN_TELEKILL_ALLOY_BLOCK = new BlockTinkerFluid(MODFluids.MOLTEN_TELEKILL_ALLOY,
 			Material.LAVA).setRegistryName(MGServerUtility.MODID, "molten_telekill_alloy_fluid");
 	public static Block MOLTEN_VANADIUM_STEEL_BLOCK = new BlockTinkerFluid(MODFluids.MOLTEN_VANADIUM_STEEL,
@@ -27,10 +35,19 @@ public class MODBlocks {
 	public static Block MOLTEN_VOID_BLOCK = new BlockTinkerFluid(MODFluids.MOLTEN_VOID,
 			Material.WATER).setRegistryName(MGServerUtility.MODID, "molten_void_fluid");
 
+	public static Block MOLTEN_NAQUADAH_ALLOY_BLOCK = new BlockTinkerFluid(MODFluids.MOLTEN_NAQUADAH_ALLOY,
+			Material.LAVA).setRegistryName(MGServerUtility.MODID, "molten_naquadah_alloy_fluid");
+	public static Block MOLTEN_TUNGSTEN_STEEL_BLOCK = new BlockTinkerFluid(MODFluids.MOLTEN_TUNGSTEN_STEEL,
+			Material.LAVA).setRegistryName(MGServerUtility.MODID, "molten_tungsten_steel_fluid");
+	public static Block MOLTEN_ULTIMET_BLOCK = new BlockTinkerFluid(MODFluids.MOLTEN_ULTIMET,
+			Material.LAVA).setRegistryName(MGServerUtility.MODID, "molten_ultimet_fluid");
+
 	public static List<Block> registerBlockList() {
 		List<Block> l = new ArrayList<Block>();
 		l.addAll(Arrays.asList(
-				VANADIUM_STEEL_BLOCK
+				VANADIUM_STEEL_BLOCK,
+				TEST_BLOCK,
+				OOD_BLOCK
 
 		));
 		return l;
@@ -43,7 +60,10 @@ public class MODBlocks {
 				MOLTEN_TELEKILL_ALLOY_BLOCK,
 				MOLTEN_VANADIUM_STEEL_BLOCK,
 				MOLTEN_DATA_EXPUNGEDL_BLOCK,
-				MOLTEN_VOID_BLOCK
+				MOLTEN_VOID_BLOCK,
+				MOLTEN_NAQUADAH_ALLOY_BLOCK,
+				MOLTEN_TUNGSTEN_STEEL_BLOCK,
+				MOLTEN_ULTIMET_BLOCK
 
 		));
 		return l;

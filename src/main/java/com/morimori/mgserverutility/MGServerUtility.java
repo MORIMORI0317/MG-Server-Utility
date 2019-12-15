@@ -3,6 +3,7 @@ package com.morimori.mgserverutility;
 import org.apache.logging.log4j.Logger;
 
 import com.morimori.mgserverutility.SCP.MODClockworksRecipes;
+import com.morimori.mgserverutility.config.MGConfig;
 import com.morimori.mgserverutility.fluids.MODFluids;
 import com.morimori.mgserverutility.items.MIDOreDictionary;
 import com.morimori.mgserverutility.items.MODItems;
@@ -10,6 +11,7 @@ import com.morimori.mgserverutility.proxy.ClientProxy;
 import com.morimori.mgserverutility.proxy.CommonProxy;
 import com.morimori.mgserverutility.tinker.MODMaterials;
 import com.morimori.mgserverutility.tinker.MODTConst;
+import com.morimori.mgserverutility.world.dimensions.MGDimentions;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -32,7 +34,7 @@ public class MGServerUtility {
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
-
+		MGConfig.loadc(event);
 		LOGGER = event.getModLog();
 		proxy.preInit();
 
@@ -46,6 +48,7 @@ public class MGServerUtility {
 		MODMaterials.preInit();
 		MODTConst.preinit();
 		MODClockworksRecipes.preInit();
+		MGDimentions.init();
 
 	}
 
@@ -67,7 +70,5 @@ public class MGServerUtility {
 		MODTConst.postinit();
 
 	}
-
-
 
 }

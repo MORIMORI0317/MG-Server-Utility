@@ -1,6 +1,7 @@
 package com.morimori.mgserverutility.client.handler;
 
 import com.morimori.mgserverutility.MGServerUtility;
+import com.morimori.mgserverutility.config.MGConfig;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
@@ -38,7 +39,7 @@ public class GuiHandler {
 		if (e.getGui() instanceof GuiMainMenu && e.getButton().id == 114) {
 
 			Minecraft.getMinecraft().displayGuiScreen(new GuiConnecting(e.getGui(), Minecraft.getMinecraft(),
-					new ServerData(I18n.format("selectServer.defaultName"), "scp.mgsv.xyz", false)));
+					new ServerData(I18n.format("selectServer.defaultName"), MGConfig.ServerIp, false)));
 
 		}
 

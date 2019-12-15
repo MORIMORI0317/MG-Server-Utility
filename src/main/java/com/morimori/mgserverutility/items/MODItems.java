@@ -15,10 +15,27 @@ public class MODItems {
 
 	public static List<ItemStack> RECPRD_LOOT_LIST = new ArrayList<ItemStack>();
 
-	public static Item VANADIUM_STEEL_INGOT = new Item()
+	public static Item VANADIUM_STEEL_INGOT = new ItemAnyIngot(13882323)
 			.setRegistryName(MGServerUtility.MODID, "vanadium_steel_ingot")
 			.setUnlocalizedName("vanadium_steel_ingot")
 			.setCreativeTab(MODCreativeTab.MGTAB);
+	public static Item NAQUADAH_ALLOY_INGOT = new ItemAnyIngot(2302755)
+			.setRegistryName(MGServerUtility.MODID, "naquadah_alloy_ingot")
+			.setUnlocalizedName("naquadah_alloy_ingot")
+			.setCreativeTab(MODCreativeTab.MGTAB);
+	public static Item TUNGSTEN_STEEL_INGOT = new ItemAnyIngot(2964308)
+			.setRegistryName(MGServerUtility.MODID, "tungsten_steel_ingot")
+			.setUnlocalizedName("tungsten_steel_ingot")
+			.setCreativeTab(MODCreativeTab.MGTAB);
+	public static Item ULTIMET_INGOT = new ItemAnyIngot(9085907)
+			.setRegistryName(MGServerUtility.MODID, "ultimet_ingot")
+			.setUnlocalizedName("ultimet_ingot")
+			.setCreativeTab(MODCreativeTab.MGTAB);
+	public static Item NAQUADAH_INGOT = new ItemAnyIngot("100F0F")
+			.setRegistryName(MGServerUtility.MODID, "naquadah_ingot")
+			.setUnlocalizedName("naquadah_ingot")
+			.setCreativeTab(MODCreativeTab.MGTAB);
+
 	public static Item VOID_INGOT = new Item()
 			.setRegistryName(MGServerUtility.MODID, "void_ingot")
 			.setUnlocalizedName("void_ingot")
@@ -84,13 +101,26 @@ public class MODItems {
 			.setUnlocalizedName("record")
 			.setCreativeTab(MODCreativeTab.MGTAB);
 
-	public static Item RECORD_LOOT_BAG = new ItemLootBag("record", RECPRD_LOOT_LIST)
-			.setRegistryName(MGServerUtility.MODID, "record_loot_bag")
-			.setUnlocalizedName("record_loot_bag").setCreativeTab(MODCreativeTab.MGTAB);
+	//	public static Item RECORD_LOOT_BAG = new ItemLootBag("record", RECPRD_LOOT_LIST)
+	//			.setRegistryName(MGServerUtility.MODID, "record_loot_bag")
+	//			.setUnlocalizedName("record_loot_bag").setCreativeTab(MODCreativeTab.MGTAB);
 
 	public static Item RECORD_LOTTERY_BAG = new ItemLotteryLootBag("record", LootBag.RECORD_LOOT)
 			.setRegistryName(MGServerUtility.MODID, "record_lottery_loot_bag")
-			.setUnlocalizedName("record_loot_bag").setCreativeTab(MODCreativeTab.MGTAB);
+			.setUnlocalizedName("record_lottery_loot_bag").setCreativeTab(MODCreativeTab.MGTAB);
+
+	public static Item YJ_LOTTERY_BAG = new ItemLotteryLootBag("yj", LootBag.YJ_LOOT)
+			.setRegistryName(MGServerUtility.MODID, "yj_lottery_loot_bag")
+			.setUnlocalizedName("yj_lottery_loot_bag").setCreativeTab(MODCreativeTab.MGTAB);
+
+	public static Item INM_LOTTERY_BAG = new ItemLotteryLootBag("inm", LootBag.INM_LOOT)
+			.setRegistryName(MGServerUtility.MODID, "inm_lottery_loot_bag")
+			.setUnlocalizedName("inm_lottery_loot_bag").setCreativeTab(MODCreativeTab.MGTAB);
+
+	public static Item TEST_ITEM = new ItemTest()
+			.setRegistryName(MGServerUtility.MODID, "test")
+			.setUnlocalizedName("test")
+			.setCreativeTab(MODCreativeTab.MGTAB);
 
 	public static List<Item> registerItemList() {
 		List<Item> l = new ArrayList<Item>();
@@ -103,7 +133,6 @@ public class MODItems {
 				YATTAZE_RECORD,
 				MARENOL_RECORD,
 				MOPEMOPE_RECORD,
-				RECORD_LOOT_BAG,
 				BREAK_THE_NIGHT_ARAN_REMIX_REDALICE_RECORD,
 				CHAOS_MUSIC_RECORD,
 				SNAKE_EATER_RECORD,
@@ -111,7 +140,35 @@ public class MODItems {
 				YSYOU_RECORD,
 				HAKUSINKARATEBU_RECORD,
 				YJINTABYU_RECORD,
-				RECORD_LOTTERY_BAG
+				RECORD_LOTTERY_BAG,
+				YJ_LOTTERY_BAG,
+				INM_LOTTERY_BAG,
+				NAQUADAH_ALLOY_INGOT,
+				TUNGSTEN_STEEL_INGOT,
+				ULTIMET_INGOT,
+				NAQUADAH_INGOT
+
+		));
+
+		return l;
+	}
+
+	public static List<Item> hideItemList() {
+		List<Item> l = new ArrayList<Item>();
+		l.addAll(Arrays.asList(
+				YJINTABYU_RECORD,
+				HAKUSINKARATEBU_RECORD,
+				YSYOU_RECORD,
+				TAKARAZIMA_RECORD,
+				SNAKE_EATER_RECORD,
+				CHAOS_MUSIC_RECORD,
+				BREAK_THE_NIGHT_ARAN_REMIX_REDALICE_RECORD,
+				YATTAZE_RECORD,
+				MOPEMOPE_RECORD,
+				MARENOL_RECORD,
+				YATTAZE_RECORD,
+				HOLOGRAM_RECORD,
+				CYCLOPS_RECORD
 
 		));
 
@@ -119,21 +176,8 @@ public class MODItems {
 	}
 
 	public static void init() {
-		RECPRD_LOOT_LIST.addAll(Arrays.asList(
-				new ItemStack(CYCLOPS_RECORD),
-				new ItemStack(HOLOGRAM_RECORD),
-				new ItemStack(YATTAZE_RECORD),
-				new ItemStack(MARENOL_RECORD),
-				new ItemStack(MOPEMOPE_RECORD),
-				new ItemStack(BREAK_THE_NIGHT_ARAN_REMIX_REDALICE_RECORD),
-				new ItemStack(CHAOS_MUSIC_RECORD),
-				new ItemStack(SNAKE_EATER_RECORD),
-				new ItemStack(TAKARAZIMA_RECORD),
-				new ItemStack(YSYOU_RECORD),
-				new ItemStack(HAKUSINKARATEBU_RECORD),
-				new ItemStack(YJINTABYU_RECORD)
 
-		));
 		LootBag.init();
+
 	}
 }

@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "mgserverutility:blocks/out_of_dimension_block"
+    }
+}
