@@ -16,6 +16,22 @@
 		"void": {
 				"model": "forge:fluid",
 				"custom": { "fluid": "void" }
+			},
+		"naqua": {
+				"model": "forge:fluid",
+				"custom": { "fluid": "naquadahalloy" }
+			},
+		"tung": {
+				"model": "forge:fluid",
+				"custom": { "fluid": "tungstensteel" }
+			},
+		"ulti": {
+				"model": "forge:fluid",
+				"custom": { "fluid": "ultimet" }
+			},
+		"naqu": {
+				"model": "forge:fluid",
+				"custom": { "fluid": "naquadah" }
 			}
 	}
 }

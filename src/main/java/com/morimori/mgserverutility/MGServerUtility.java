@@ -11,7 +11,9 @@ import com.morimori.mgserverutility.proxy.ClientProxy;
 import com.morimori.mgserverutility.proxy.CommonProxy;
 import com.morimori.mgserverutility.tinker.MODMaterials;
 import com.morimori.mgserverutility.tinker.MODTConst;
+import com.morimori.mgserverutility.world.biome.MGBiomes;
 import com.morimori.mgserverutility.world.dimensions.MGDimentions;
+import com.morimori.mgserverutility.world.generate.BlockGenerator;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -19,13 +21,14 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = MGServerUtility.MODID, name = MGServerUtility.NAME, version = MGServerUtility.VERSION)
 
 public class MGServerUtility {
 	public static final String MODID = "mgserverutility";
 	public static final String NAME = "MG Server Utility";
-	public static final String VERSION = "Build 5";
+	public static final String VERSION = "Build 7";
 
 	public static Logger LOGGER;
 
@@ -48,8 +51,9 @@ public class MGServerUtility {
 		MODMaterials.preInit();
 		MODTConst.preinit();
 		MODClockworksRecipes.preInit();
+		MGBiomes.init();
 		MGDimentions.init();
-
+		GameRegistry.registerWorldGenerator(new BlockGenerator(), 3);
 	}
 
 	@EventHandler

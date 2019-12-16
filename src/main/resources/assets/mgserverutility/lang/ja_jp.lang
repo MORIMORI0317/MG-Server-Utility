@@ -4,7 +4,7 @@ item.void_ingot.name=虚無インゴット
 item.void_nugget.name=虚無塊
 item.naquadah_alloy_ingot.name=ナクアダ合金インゴット
 item.tungsten_steel_ingot.name=タングステン鋼インゴット
-item.ultimet_ingot.name=アルタイムインゴット
+item.ultimet_ingot.name=アルティメイトインゴット
 item.record_lottery_loot_bag.name=レコードのルートバッグ
 item.yj_lottery_loot_bag.name=野獣のルートバッグ
 item.inm_lottery_loot_bag.name=淫夢のルートバッグ
@@ -26,6 +26,7 @@ item.record.hakusinkaratebu.desc=Y810 - ３章 空手部・性の裏技
 #Blocks#
 tile.vanadium_steel_block.name=バナジウム鋼ブロック
 tile.out_of_dimension_block.name=オウトオブディメンションブロック
+tile.naquadah_ore.name=ナクアダ鉱石
 
 #Fluids#
 fluid.tconstruct.telekillalloy.name=溶けたテレキル合金
@@ -34,7 +35,7 @@ fluid.tconstruct.dataexpunged.name=溶けた[削除済]
 fluid.tconstruct.void.name=溶けた虚無
 fluid.tconstruct.naquadahalloy.name=溶けたナクアダ合金
 fluid.tconstruct.tungstensteel.name=溶けたタングステン鋼
-fluid.tconstruct.ultimet.name=溶けたアルタイム
+fluid.tconstruct.ultimet.name=溶けたアルティメイト
 fluid.tconstruct.naquadah.name=溶けたナクアダ
 
 #Materials#
@@ -54,8 +55,8 @@ material.naquadahalloy.name=ナクアダ合金
 material.naquadahalloy.prefix=ナクアダ合金の%s
 material.tungstensteel.name=タングステン鋼
 material.tungstensteel.prefix=タングステン鋼の%s
-material.ultimet.name=アルタイム
-material.ultimet.prefix=アルタイムの%s
+material.ultimet.name=アルティメイト
+material.ultimet.prefix=アルティメイトの%s
 #Traits#
 modifier.scpproof.name=耐SCP
 modifier.dataexpunged.name=[削除済]

@@ -4,10 +4,10 @@ import java.util.List;
 import java.util.Random;
 
 import com.morimori.mgserverutility.blocks.MODBlocks;
+import com.morimori.mgserverutility.world.biome.MGBiomes;
 
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EnumCreatureType;
-import net.minecraft.init.Biomes;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -56,6 +56,8 @@ public class ChunkGeneratorOutOf implements IChunkGenerator {
 		IBlockState STONE = Blocks.STONE.getDefaultState();
 		IBlockState OODB = MODBlocks.OOD_BLOCK.getDefaultState();
 		IBlockState BEDROCK = Blocks.BEDROCK.getDefaultState();
+		IBlockState NQORE = Blocks.ACACIA_FENCE.getDefaultState();
+
 		int x1, y1, z1;
 		for (x1 = 0; x1 < 16; x1++) {
 			for (z1 = 0; z1 < 16; z1++) {
@@ -85,10 +87,11 @@ public class ChunkGeneratorOutOf implements IChunkGenerator {
 
 			}
 		}
+
 		Chunk chunk = new Chunk(this.world, primer, x, z);
 
 		byte[] biomeArray = chunk.getBiomeArray();
-		byte id = (byte) Biome.getIdForBiome(Biomes.PLAINS);
+		byte id = (byte) Biome.getIdForBiome(MGBiomes.OUTOFDIMENSION);
 		for (int i = 0; i < biomeArray.length; ++i) {
 			biomeArray[i] = id;
 		}

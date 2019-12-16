@@ -3,7 +3,6 @@ package com.morimori.mgserverutility.handler;
 import com.morimori.mgserverutility.MGServerUtility;
 import com.morimori.mgserverutility.MGSoundEvents;
 import com.morimori.mgserverutility.blocks.MODBlocks;
-import com.morimori.mgserverutility.items.ItemAnyIngot;
 import com.morimori.mgserverutility.items.MODItems;
 
 import net.minecraft.block.Block;
@@ -79,17 +78,17 @@ public class RegisterHandler {
 	public static void registerModels(ModelRegistryEvent event) {
 		MODItems.registerItemList().forEach(i -> {
 
-			if (!(i instanceof ItemAnyIngot)) {
-				MGServerUtility.LOGGER.info("Registing ItemModel " + i.getRegistryName());
-				ModelLoader.setCustomModelResourceLocation(i, 0,
-						new ModelResourceLocation(i.getRegistryName(), "inventory"));
-			}
+			MGServerUtility.LOGGER.info("Registing ItemModel " + i.getRegistryName());
+			ModelLoader.setCustomModelResourceLocation(i, 0,
+					new ModelResourceLocation(i.getRegistryName(), "inventory"));
 
-			if (i instanceof ItemAnyIngot) {
-				MGServerUtility.LOGGER.info("Registing AnyIngotItemModel " + i.getRegistryName());
-				ModelLoader.setCustomModelResourceLocation(i, 0,
-						new ModelResourceLocation(MGServerUtility.MODID + ":any_ingot", "inventory"));
-			}
+			/*
+						if (i instanceof ItemAnyIngot) {
+							MGServerUtility.LOGGER.info("Registing AnyIngotItemModel " + i.getRegistryName());
+							ModelLoader.setCustomModelResourceLocation(i, 0,
+									new ModelResourceLocation(MGServerUtility.MODID + ":any_ingot", "inventory"));
+
+						}*/
 
 		});
 
@@ -107,7 +106,10 @@ public class RegisterHandler {
 		registerFluidModel(MODBlocks.MOLTEN_VANADIUM_STEEL_BLOCK, "vana");
 		registerFluidModel(MODBlocks.MOLTEN_DATA_EXPUNGEDL_BLOCK, "datae");
 		registerFluidModel(MODBlocks.MOLTEN_VOID_BLOCK, "void");
-
+		registerFluidModel(MODBlocks.MOLTEN_NAQUADAH_ALLOY_BLOCK, "naqua");
+		registerFluidModel(MODBlocks.MOLTEN_TUNGSTEN_STEEL_BLOCK, "tung");
+		registerFluidModel(MODBlocks.MOLTEN_ULTIMET_BLOCK, "ulti");
+		registerFluidModel(MODBlocks.MOLTEN_NAQUADAH_BLOCK, "naqu");
 	}
 
 	@SideOnly(Side.CLIENT)

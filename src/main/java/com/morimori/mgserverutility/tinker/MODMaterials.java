@@ -108,6 +108,8 @@ public class MODMaterials {
 		TinkerMaterials.materials.add(ultimet);
 		TinkerRegistry.addMaterialStats(ultimet, new BowMaterialStats(0.05f, 1024, 256));
 
+		TinkerRegistry.integrate(MODFluids.MOLTEN_NAQUADAH, "Naquadah").toolforge()
+		.preInit();
 
 
 	}

@@ -9,29 +9,26 @@ import com.morimori.mgserverutility.MGSoundEvents;
 import com.morimori.mgserverutility.MODCreativeTab;
 
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 
 public class MODItems {
 
-	public static List<ItemStack> RECPRD_LOOT_LIST = new ArrayList<ItemStack>();
-
-	public static Item VANADIUM_STEEL_INGOT = new ItemAnyIngot(13882323)
+	public static Item VANADIUM_STEEL_INGOT = new Item()
 			.setRegistryName(MGServerUtility.MODID, "vanadium_steel_ingot")
 			.setUnlocalizedName("vanadium_steel_ingot")
 			.setCreativeTab(MODCreativeTab.MGTAB);
-	public static Item NAQUADAH_ALLOY_INGOT = new ItemAnyIngot(2302755)
+	public static Item NAQUADAH_ALLOY_INGOT = new Item()
 			.setRegistryName(MGServerUtility.MODID, "naquadah_alloy_ingot")
 			.setUnlocalizedName("naquadah_alloy_ingot")
 			.setCreativeTab(MODCreativeTab.MGTAB);
-	public static Item TUNGSTEN_STEEL_INGOT = new ItemAnyIngot(2964308)
+	public static Item TUNGSTEN_STEEL_INGOT = new Item()
 			.setRegistryName(MGServerUtility.MODID, "tungsten_steel_ingot")
 			.setUnlocalizedName("tungsten_steel_ingot")
 			.setCreativeTab(MODCreativeTab.MGTAB);
-	public static Item ULTIMET_INGOT = new ItemAnyIngot(9085907)
+	public static Item ULTIMET_INGOT = new Item()
 			.setRegistryName(MGServerUtility.MODID, "ultimet_ingot")
 			.setUnlocalizedName("ultimet_ingot")
 			.setCreativeTab(MODCreativeTab.MGTAB);
-	public static Item NAQUADAH_INGOT = new ItemAnyIngot("100F0F")
+	public static Item NAQUADAH_INGOT = new Item()
 			.setRegistryName(MGServerUtility.MODID, "naquadah_ingot")
 			.setUnlocalizedName("naquadah_ingot")
 			.setCreativeTab(MODCreativeTab.MGTAB);

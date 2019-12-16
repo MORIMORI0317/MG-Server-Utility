@@ -4,12 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.morimori.mgserverutility.MGServerUtility;
-import com.morimori.mgserverutility.items.ItemAnyIngot;
 
-import net.minecraft.client.renderer.color.ItemColors;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
-import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.client.event.RenderLivingEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -24,6 +21,7 @@ public class RenderHandler {
 
 	}
 
+	/*
 	@SubscribeEvent
 	public static void onItemColor(final ColorHandlerEvent.Item e) {
 		ItemColors Color = e.getItemColors();
@@ -31,9 +29,33 @@ public class RenderHandler {
 		for (Item i : colerItem) {
 			if (i instanceof ItemAnyIngot) {
 
-				Color.registerItemColorHandler(((ItemAnyIngot) i).getColor(), i);
+				Color.registerItemColorHandler(new IItemColor() {
+
+					@Override
+					public int colorMultiplier(ItemStack stack, int tintIndex) {
+
+						return ((ItemAnyIngot) i).getColor();
+					}
+				}, i);
 
 			}
 		}
 	}
+
+		@SubscribeEvent
+		public static void onBlockColor(final ColorHandlerEvent.Block e) {
+			BlockColors Color = e.getBlockColors();
+
+			for (Block b : ForgeRegistries.BLOCKS) {
+				Color.registerBlockColorHandler(new IBlockColor() {
+
+					@Override
+					public int colorMultiplier(IBlockState state, IBlockAccess worldIn, BlockPos pos, int tintIndex) {
+
+						return new Random().nextInt(13882323);
+					}
+				}, b);
+			}
+
+		}*/
 }

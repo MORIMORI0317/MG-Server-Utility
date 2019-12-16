@@ -18,6 +18,10 @@ public class MODBlocks {
 			"vanadium_steel_block").setHardness(1.5f).setResistance(3).setCreativeTab(MODCreativeTab.MGTAB)
 			.setUnlocalizedName("vanadium_steel_block");
 
+	public static Block NAQUADAH_ORE = new Block(Material.IRON).setRegistryName(MGServerUtility.MODID,
+			"naquadah_ore").setHardness(1.5f).setResistance(3).setCreativeTab(MODCreativeTab.MGTAB)
+			.setUnlocalizedName("naquadah_ore");
+
 	public static Block OOD_BLOCK = new Block(Material.IRON).setRegistryName(MGServerUtility.MODID,
 			"out_of_dimension_block").setHardness(1.5f).setResistance(3).setCreativeTab(MODCreativeTab.MGTAB)
 			.setUnlocalizedName("out_of_dimension_block");
@@ -41,13 +45,16 @@ public class MODBlocks {
 			Material.LAVA).setRegistryName(MGServerUtility.MODID, "molten_tungsten_steel_fluid");
 	public static Block MOLTEN_ULTIMET_BLOCK = new BlockTinkerFluid(MODFluids.MOLTEN_ULTIMET,
 			Material.LAVA).setRegistryName(MGServerUtility.MODID, "molten_ultimet_fluid");
+	public static Block MOLTEN_NAQUADAH_BLOCK = new BlockTinkerFluid(MODFluids.MOLTEN_NAQUADAH,
+			Material.LAVA).setRegistryName(MGServerUtility.MODID, "molten_naquadah_fluid");
 
 	public static List<Block> registerBlockList() {
 		List<Block> l = new ArrayList<Block>();
 		l.addAll(Arrays.asList(
 				VANADIUM_STEEL_BLOCK,
 				TEST_BLOCK,
-				OOD_BLOCK
+				OOD_BLOCK,
+				NAQUADAH_ORE
 
 		));
 		return l;
@@ -63,7 +70,8 @@ public class MODBlocks {
 				MOLTEN_VOID_BLOCK,
 				MOLTEN_NAQUADAH_ALLOY_BLOCK,
 				MOLTEN_TUNGSTEN_STEEL_BLOCK,
-				MOLTEN_ULTIMET_BLOCK
+				MOLTEN_ULTIMET_BLOCK,
+				MOLTEN_NAQUADAH_BLOCK
 
 		));
 		return l;

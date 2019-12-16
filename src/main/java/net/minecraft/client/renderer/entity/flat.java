@@ -13,7 +13,6 @@ import net.minecraftforge.client.event.RenderLivingEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
-
 @EventBusSubscriber(modid = MGServerUtility.MODID, value = Side.CLIENT)
 public class flat {
 
