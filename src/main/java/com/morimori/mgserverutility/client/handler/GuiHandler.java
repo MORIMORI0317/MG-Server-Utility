@@ -23,11 +23,11 @@ public class GuiHandler {
 		if (e.getGui() instanceof GuiMainMenu) {
 			e.getButtonList()
 					.add(new GuiButton(114, e.getButtonList().get(1).x, e.getButtonList().get(1).y,
-							98, e.getButtonList().get(1).height,
 							I18n.format("menu.joinserver")));
 
-			e.getButtonList().get(1).x = e.getGui().width / 2 + 2;
-			e.getButtonList().get(1).width = 98;
+			//e.getButtonList().remove(e.getButtonList().get(1));
+						e.getButtonList().get(1).x = e.getGui().width / 2 + 50;
+			//			e.getButtonList().get(1).width = 98;
 
 		}
 

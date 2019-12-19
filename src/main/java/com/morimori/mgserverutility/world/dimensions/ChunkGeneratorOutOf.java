@@ -57,35 +57,53 @@ public class ChunkGeneratorOutOf implements IChunkGenerator {
 		IBlockState OODB = MODBlocks.OOD_BLOCK.getDefaultState();
 		IBlockState BEDROCK = Blocks.BEDROCK.getDefaultState();
 		IBlockState NQORE = Blocks.ACACIA_FENCE.getDefaultState();
+		IBlockState KYOMU = MODBlocks.VOID_BLOCK.getDefaultState();
 
 		int x1, y1, z1;
-		for (x1 = 0; x1 < 16; x1++) {
-			for (z1 = 0; z1 < 16; z1++) {
-				primer.setBlockState(x1, 0, z1, BEDROCK);
-
-			}
-		}
-		for (x1 = 0; x1 < 16; x1++) {
-			for (y1 = 1; y1 < 100; y1++) {
+		if (r.nextInt(10000)!=1) {
+			for (x1 = 0; x1 < 16; x1++) {
 				for (z1 = 0; z1 < 16; z1++) {
-					primer.setBlockState(x1, y1, z1, STONE);
+					primer.setBlockState(x1, 0, z1, BEDROCK);
+
 				}
 			}
-		}
-
-		for (x1 = 0; x1 < 16; x1++) {
-			for (y1 = 100; y1 < 100 + a; y1++) {
-				for (z1 = 0; z1 < 16; z1++) {
-					primer.setBlockState(x1, y1, z1, OODB);
+			for (x1 = 0; x1 < 16; x1++) {
+				for (y1 = 1; y1 < 100; y1++) {
+					for (z1 = 0; z1 < 16; z1++) {
+						primer.setBlockState(x1, y1, z1, STONE);
+					}
 				}
 			}
-		}
 
-		for (x1 = 0; x1 < 16; x1++) {
-			for (z1 = 0; z1 < 16; z1++) {
-				primer.setBlockState(x1, 100 + a, z1, OODB);
-
+			for (x1 = 0; x1 < 16; x1++) {
+				for (y1 = 100; y1 < 100 + a; y1++) {
+					for (z1 = 0; z1 < 16; z1++) {
+						primer.setBlockState(x1, y1, z1, OODB);
+					}
+				}
 			}
+
+			for (x1 = 0; x1 < 16; x1++) {
+				for (z1 = 0; z1 < 16; z1++) {
+					primer.setBlockState(x1, 100 + a, z1, OODB);
+
+				}
+			}
+		} else {
+			for (x1 = 0; x1 < 16; x1++) {
+				for (z1 = 0; z1 < 16; z1++) {
+					primer.setBlockState(x1, 0, z1, BEDROCK);
+
+				}
+			}
+			for (x1 = 0; x1 < 16; x1++) {
+				for (y1 = 1; y1 < 100 + a; y1++) {
+					for (z1 = 0; z1 < 16; z1++) {
+						primer.setBlockState(x1, y1, z1, KYOMU);
+					}
+				}
+			}
+
 		}
 
 		Chunk chunk = new Chunk(this.world, primer, x, z);

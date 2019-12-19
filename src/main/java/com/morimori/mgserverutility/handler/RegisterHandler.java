@@ -37,9 +37,18 @@ public class RegisterHandler {
 				MGSoundEvents.TAKARAZIMA_MUSIC,
 				MGSoundEvents.YSYOU_MUSIC,
 				MGSoundEvents.HAKUSINKARATEBU_MUSIC,
-				MGSoundEvents.YJINTABYU_MUSIC
+				MGSoundEvents.YJINTABYU_MUSIC,
+				MGSoundEvents.KONGYO_MUSIC,
+				MGSoundEvents.IEVAN_POLKKA_MUSIC,
+				MGSoundEvents.EVANGELION_8TH_APOSTLE_MUSIC,
+				MGSoundEvents.SOVIET_MARCH_MUSIC,
+				MGSoundEvents.PEPSIMAN_THEME_MUSIC,
+				MGSoundEvents.AWAKENING_MUSIC,
+				MGSoundEvents.KEIZOKU_HIGH_SCHOOL,
+				MGSoundEvents.TEREPORTOUTOOFDIMENTION
 
-		);
+
+				);
 
 	}
 

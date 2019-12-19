@@ -1,0 +1,18 @@
+{
+  "parent": "builtin/image",
+  "image": "customloadingscreen:loadingbear_y.png",
+  "position_type": "TOP_LEFT",
+  "offset_pos": "TOP_LEFT",
+  "position": {
+    "x": "(screen_width / 2 - 75 )+ 1",
+    "y": "(screen_height / 2 - 5)+2",
+    "width": "(150 / 30)*floor(0.3*(floor(percentage * 100)))-2 ",
+    "height": "10-4"
+  },
+  "texture": {
+    "x": "0",
+    "y": "0",
+    "width": "floor(0.3*(floor(percentage * 100)))",
+    "height": "1"
+  }
+}

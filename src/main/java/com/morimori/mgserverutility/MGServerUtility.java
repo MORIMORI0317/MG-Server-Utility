@@ -9,6 +9,7 @@ import com.morimori.mgserverutility.items.MIDOreDictionary;
 import com.morimori.mgserverutility.items.MODItems;
 import com.morimori.mgserverutility.proxy.ClientProxy;
 import com.morimori.mgserverutility.proxy.CommonProxy;
+import com.morimori.mgserverutility.slashblade.MGSlashblade;
 import com.morimori.mgserverutility.tinker.MODMaterials;
 import com.morimori.mgserverutility.tinker.MODTConst;
 import com.morimori.mgserverutility.world.biome.MGBiomes;
@@ -28,7 +29,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class MGServerUtility {
 	public static final String MODID = "mgserverutility";
 	public static final String NAME = "MG Server Utility";
-	public static final String VERSION = "Build 7";
+	public static final String VERSION = "Build 9";
 
 	public static Logger LOGGER;
 
@@ -53,6 +54,7 @@ public class MGServerUtility {
 		MODClockworksRecipes.preInit();
 		MGBiomes.init();
 		MGDimentions.init();
+		MGSlashblade.preInit();
 		GameRegistry.registerWorldGenerator(new BlockGenerator(), 3);
 	}
 
@@ -66,13 +68,15 @@ public class MGServerUtility {
 		MODMaterials.init();
 		MODTConst.init();
 		MIDOreDictionary.registOredict();
-		MODItems.init();
+		MODItems.posInit();
+		MGSlashblade.Init();
+
 	}
 
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		MODTConst.postinit();
-
+		MGSlashblade.posInit();
 	}
 
 }

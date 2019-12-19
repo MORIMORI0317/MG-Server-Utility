@@ -61,46 +61,64 @@ public class MODItems {
 			.setRegistryName(MGServerUtility.MODID, "mopemope_record")
 			.setUnlocalizedName("record")
 			.setCreativeTab(MODCreativeTab.MGTAB);
-
 	public static Item BREAK_THE_NIGHT_ARAN_REMIX_REDALICE_RECORD = new IItemRecord(
 			"break_the_night_aran_remix_redalice", MGSoundEvents.BREAK_THE_NIGHT_ARAN_REMIX_REDALICE_MUSIC)
 					.setRegistryName(MGServerUtility.MODID, "break_the_night_aran_remix_redalice_record")
 					.setUnlocalizedName("record")
 					.setCreativeTab(MODCreativeTab.MGTAB);
-
 	public static Item CHAOS_MUSIC_RECORD = new IItemRecord("chaos_music", MGSoundEvents.CHAOS_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "chaos_music_record")
 			.setUnlocalizedName("record")
 			.setCreativeTab(MODCreativeTab.MGTAB);
-
 	public static Item SNAKE_EATER_RECORD = new IItemRecord("snake_eater", MGSoundEvents.SNAKE_EATER_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "snake_eater_record")
 			.setUnlocalizedName("record")
 			.setCreativeTab(MODCreativeTab.MGTAB);
-
 	public static Item TAKARAZIMA_RECORD = new IItemRecord("sakanak", MGSoundEvents.TAKARAZIMA_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "sakanak_record")
 			.setUnlocalizedName("record")
 			.setCreativeTab(MODCreativeTab.MGTAB);
-
 	public static Item YSYOU_RECORD = new IItemRecord("ysyou", MGSoundEvents.YSYOU_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "ysyou_record")
 			.setUnlocalizedName("record")
 			.setCreativeTab(MODCreativeTab.MGTAB);
-
 	public static Item HAKUSINKARATEBU_RECORD = new IItemRecord("hakusinkaratebu", MGSoundEvents.HAKUSINKARATEBU_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "hakusinkaratebu_record")
 			.setUnlocalizedName("record")
 			.setCreativeTab(MODCreativeTab.MGTAB);
-
 	public static Item YJINTABYU_RECORD = new IItemRecord("yjintabyu-", MGSoundEvents.YJINTABYU_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "yjintabyu_record")
 			.setUnlocalizedName("record")
 			.setCreativeTab(MODCreativeTab.MGTAB);
-
-	//	public static Item RECORD_LOOT_BAG = new ItemLootBag("record", RECPRD_LOOT_LIST)
-	//			.setRegistryName(MGServerUtility.MODID, "record_loot_bag")
-	//			.setUnlocalizedName("record_loot_bag").setCreativeTab(MODCreativeTab.MGTAB);
+	public static Item KONGYO_RECORD = new IItemRecord("kongyo", MGSoundEvents.KONGYO_MUSIC)
+			.setRegistryName(MGServerUtility.MODID, "kongyo_record")
+			.setUnlocalizedName("record")
+			.setCreativeTab(MODCreativeTab.MGTAB);
+	public static Item IEVAN_POLKKA_RECORD = new IItemRecord("ievan_polkka", MGSoundEvents.IEVAN_POLKKA_MUSIC)
+			.setRegistryName(MGServerUtility.MODID, "ievan_polkka_record")
+			.setUnlocalizedName("record")
+			.setCreativeTab(MODCreativeTab.MGTAB);
+	public static Item EVANGELION_8TH_APOSTLE_RECORD = new IItemRecord("evangelion_8th_apostle",
+			MGSoundEvents.EVANGELION_8TH_APOSTLE_MUSIC)
+					.setRegistryName(MGServerUtility.MODID, "evangelion_8th_apostle_record")
+					.setUnlocalizedName("record")
+					.setCreativeTab(MODCreativeTab.MGTAB);
+	public static Item SOVIET_MARCH_RECORD = new IItemRecord("soviet_march", MGSoundEvents.SOVIET_MARCH_MUSIC)
+			.setRegistryName(MGServerUtility.MODID, "soviet_march_record")
+			.setUnlocalizedName("record")
+			.setCreativeTab(MODCreativeTab.MGTAB);
+	public static Item PEPSIMAN_THEME_RECORD = new IItemRecord("pepsiman_theme", MGSoundEvents.PEPSIMAN_THEME_MUSIC)
+			.setRegistryName(MGServerUtility.MODID, "pepsiman_theme_record")
+			.setUnlocalizedName("record")
+			.setCreativeTab(MODCreativeTab.MGTAB);
+	public static Item AWAKENING_RECORD = new IItemRecord("awakening", MGSoundEvents.AWAKENING_MUSIC)
+			.setRegistryName(MGServerUtility.MODID, "awakening_record")
+			.setUnlocalizedName("record")
+			.setCreativeTab(MODCreativeTab.MGTAB);
+	public static Item KEIZOKU_HIGH_RECORD = new IItemRecord("keizoku_high_school", MGSoundEvents.KEIZOKU_HIGH_SCHOOL)
+			.setRegistryName(MGServerUtility.MODID, "keizoku_high_school_record")
+			.setUnlocalizedName("record")
+			.setCreativeTab(MODCreativeTab.MGTAB);
 
 	public static Item RECORD_LOTTERY_BAG = new ItemLotteryLootBag("record", LootBag.RECORD_LOOT)
 			.setRegistryName(MGServerUtility.MODID, "record_lottery_loot_bag")
@@ -113,6 +131,19 @@ public class MODItems {
 	public static Item INM_LOTTERY_BAG = new ItemLotteryLootBag("inm", LootBag.INM_LOOT)
 			.setRegistryName(MGServerUtility.MODID, "inm_lottery_loot_bag")
 			.setUnlocalizedName("inm_lottery_loot_bag").setCreativeTab(MODCreativeTab.MGTAB);
+
+	public static Item BLADE_LOTTERY_BAG = new ItemLotteryLootBag("blade", LootBag.BLADE_LOOT)
+			.setRegistryName(MGServerUtility.MODID, "blade_lottery_loot_bag")
+			.setUnlocalizedName("blade_lottery_loot_bag").setCreativeTab(MODCreativeTab.MGTAB);
+
+	public static Item HEAD_LOTTERY_BAG = new ItemLotteryLootBag("head", LootBag.HEAD_LOOT)
+			.setRegistryName(MGServerUtility.MODID, "head_lottery_loot_bag")
+			.setUnlocalizedName("head_lottery_loot_bag").setCreativeTab(MODCreativeTab.MGTAB);
+
+	public static Item GUN_LOTTERY_BAG = new ItemLotteryLootBag("gun", LootBag.GUN_LOOT)
+			.setRegistryName(MGServerUtility.MODID, "gun_lottery_loot_bag")
+			.setUnlocalizedName("gun_lottery_loot_bag").setCreativeTab(MODCreativeTab.MGTAB);
+
 
 	public static Item TEST_ITEM = new ItemTest()
 			.setRegistryName(MGServerUtility.MODID, "test")
@@ -143,7 +174,17 @@ public class MODItems {
 				NAQUADAH_ALLOY_INGOT,
 				TUNGSTEN_STEEL_INGOT,
 				ULTIMET_INGOT,
-				NAQUADAH_INGOT
+				NAQUADAH_INGOT,
+				KONGYO_RECORD,
+				IEVAN_POLKKA_RECORD,
+				EVANGELION_8TH_APOSTLE_RECORD,
+				SOVIET_MARCH_RECORD,
+				PEPSIMAN_THEME_RECORD,
+				AWAKENING_RECORD,
+				KEIZOKU_HIGH_RECORD,
+				BLADE_LOTTERY_BAG,
+				HEAD_LOTTERY_BAG,
+				GUN_LOTTERY_BAG
 
 		));
 
@@ -165,16 +206,23 @@ public class MODItems {
 				MARENOL_RECORD,
 				YATTAZE_RECORD,
 				HOLOGRAM_RECORD,
-				CYCLOPS_RECORD
+				CYCLOPS_RECORD,
+				KONGYO_RECORD,
+				IEVAN_POLKKA_RECORD,
+				EVANGELION_8TH_APOSTLE_RECORD,
+				SOVIET_MARCH_RECORD,
+				PEPSIMAN_THEME_RECORD,
+				AWAKENING_RECORD,
+				KEIZOKU_HIGH_RECORD
 
 		));
 
 		return l;
 	}
 
-	public static void init() {
+	public static void posInit() {
 
-		LootBag.init();
+		LootBag.posInit();
 
 	}
 }

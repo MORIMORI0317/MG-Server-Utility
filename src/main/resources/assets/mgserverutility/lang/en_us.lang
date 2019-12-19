@@ -5,11 +5,17 @@ item.void_nugget.name=Void Nugget
 item.record_lottery_loot_bag.name=Record Loot Bag
 item.yj_lottery_loot_bag.name=Yj Loot Bag
 item.inm_lottery_loot_bag.name=Inm Loot Bag
+item.blade_lottery_loot_bag.name=Blade Loot Bag
+item.head_lottery_loot_bag.name=Head Loot Bag
+item.gun_lottery_loot_bag.name=Gun Loot Bag
+
+
 item.naquadah_alloy_ingot.name=Naquadah Alloy Ingot
 item.tungsten_steel_ingot.name=Tungsten Steel Ingot
 item.ultimet_ingot.name=Ultimet Ingot
 item.naquadah_ingot.name=Naquadah Ingot
 
+item.nukel.name=Nuke Launcher
 
 item.record.cyclops.desc=Cyclops Senpai Music
 item.record.hologram.desc=Essentialcraft's Hologram Battle Music
@@ -23,11 +29,28 @@ item.record.sakanak.desc=Sin Takarajima
 item.record.yjintabyu-.desc=Y810 - YJ Interview
 item.record.ysyou.desc=Y810 - Chapter 4 Coma Ra*e! Senior Became YJ
 item.record.hakusinkaratebu.desc=Y810 - Chapter 3 Karate Club. Sexual tricks
+item.record.kongyo.desc=Kongyo
+item.record.ievan_polkka.desc=Ievan Polkka
+item.record.evangelion_8th_apostle.desc=Evangelion 8th Apostle
+item.record.soviet_march.desc=Soviet March
+item.record.pepsiman_theme.desc=Pepsiman Theme
+item.record.awakening.desc=Awakening
+item.record.keizoku_high_school.desc=Keizoku High School Säkkijärven Polkka
+
+item.blade_lottery_loot_bag.following.desc=Contains the following items:
+item.blade_lottery_loot_bag.cont.desc=%s pieces
+
+#Blades#
+item.flammpfeil.slashblade.named.mgsvu.test.name=TesTou
+item.flammpfeil.slashblade.named.mgsvu.yj.name=ZetyouTou--Ikisugi
+item.flammpfeil.slashblade.named.mgsvu.nullriot.name=Blade Of Nullriot
+
 
 #Blocks#
 tile.vanadium_steel_block.name=Block of Vanadium Steel
 tile.out_of_dimension_block.name=Block of Out Of Dimension
 tile.naquadah_ore.name=Naquadah Ore
+tile.void_block.name=Block of Void
 
 
 #Fluids#
@@ -40,6 +63,8 @@ fluid.tconstruct.tungstensteel.name=Molten Tungsten Steel
 fluid.tconstruct.ultimet.name=Molten Ultimet
 fluid.tconstruct.naquadah.name=Molten Naquadah
 
+#Sounds#
+mgserverutility.subtitle.tereportoutoofdimention=Off Dimension
 
 #Materials#
 material.telekillalloy.name=Telekill Alloy

@@ -17,7 +17,7 @@ public class MODTConst {
 	}
 
 	public static void init() {
-
+		MekanismFluids.FusionFuel.getFluid().setTemperature(8300);
 	}
 
 	public static void postinit() {
@@ -39,7 +39,7 @@ public class MODTConst {
 				new FluidStack(MainInit.mazai, 10),
 				new FluidStack(MainInit.coffee, 10));
 
-
+		TinkerRegistry.registerSmelteryFuel(new FluidStack(MekanismFluids.FusionFuel.getFluid(), 50), 1000);
 
 	}
 }

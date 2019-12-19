@@ -110,5 +110,50 @@
         "stream": true
       }
     ]
+  },
+     "evangelion_8th_apostle": {
+    "sounds": [
+      {
+        "name": "mgserverutility:evangelion_8th_apostle",
+        "stream": true
+      }
+    ]
+  },
+     "soviet_march": {
+    "sounds": [
+      {
+        "name": "mgserverutility:soviet_march",
+        "stream": true
+      }
+    ]
+  },
+     "pepsiman_theme": {
+    "sounds": [
+      {
+        "name": "mgserverutility:pepsiman_theme",
+        "stream": true
+      }
+    ]
+  },
+     "awakening": {
+    "sounds": [
+      {
+        "name": "mgserverutility:awakening",
+        "stream": true
+      }
+    ]
+  },
+     "keizoku_high_school": {
+    "sounds": [
+      {
+        "name": "mgserverutility:keizoku_high_school",
+        "stream": true
+      }
+    ]
+  },
+  "tereportoutoofdimention": {
+    "category": "ambient",
+    "subtitle": "mgserverutility.subtitle.tereportoutoofdimention",
+    "sounds": [ "mgserverutility:tereportoutoofdimention" ]
   }
 }

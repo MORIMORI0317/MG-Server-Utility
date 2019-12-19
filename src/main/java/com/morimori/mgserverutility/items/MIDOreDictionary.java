@@ -19,7 +19,7 @@ public class MIDOreDictionary {
 		OreDictionary.registerOre("ingotBladeWood", SCPItems.treeMaterial);
 		OreDictionary.registerOre("ingotVoid", MODItems.VOID_INGOT);
 		OreDictionary.registerOre("nuggetVoid", MODItems.VOID_NUGGET);
-
+		OreDictionary.registerOre("blockVoid", MODBlocks.VOID_BLOCK);
 		OreDictionary.registerOre("ingotNaquadahAlloy", MODItems.NAQUADAH_ALLOY_INGOT);
 		OreDictionary.registerOre("ingotTungstenSteel", MODItems.TUNGSTEN_STEEL_INGOT);
 		OreDictionary.registerOre("ingotUltimet", MODItems.ULTIMET_INGOT);

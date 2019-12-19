@@ -1,0 +1,19 @@
+{
+  "parent": "builtin/image",
+  "image": "customloadingscreen:SCP_Back.png",
+  "position_type": "TOP_RIGHT",
+  "offset_pos": "TOP_RIGHT",
+  "colour": "0xFF_00_00_00 | (0x01_01_01 * (0xFF - 0xFF * 100 / (floor(percentage * 100))).max(0x20))",
+  "position": {
+    "x": "0",
+    "y": "0",
+    "width": "screen_width",
+    "height": "screen_height"
+  },
+  "texture": {
+    "x": "0",
+    "y": "0",
+    "width": "1",
+    "height": "1"
+  }
+}

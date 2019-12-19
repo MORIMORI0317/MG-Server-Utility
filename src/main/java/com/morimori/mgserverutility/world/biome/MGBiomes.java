@@ -11,10 +11,10 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class MGBiomes {
 	public static Biome OUTOFDIMENSION = new BiomeVoid(
-			new BiomeProperties("OutOfDimension").setTemperature(0F).setWaterColor(74));
+			new BiomeProperties("OutOfDimension").setTemperature(27F).setWaterColor(74));
 
 	public static void init() {
-		registerBiome(OUTOFDIMENSION, "outofdimension", BiomeType.WARM, Type.VOID, Type.COLD, Type.DRY, Type.END,
+		registerBiome(OUTOFDIMENSION, "outofdimension", BiomeType.WARM, Type.VOID, Type.DRY, Type.END,
 				Type.DEAD);
 	}
 
@@ -22,7 +22,7 @@ public class MGBiomes {
 		biomes.setRegistryName(name);
 		ForgeRegistries.BIOMES.register(biomes);
 		BiomeDictionary.addTypes(biomes, tyape);
-		BiomeManager.addBiome(Btyape, new BiomeEntry(biomes, 3));
+		BiomeManager.addBiome(Btyape, new BiomeEntry(biomes, 0));
 
 	}
 }

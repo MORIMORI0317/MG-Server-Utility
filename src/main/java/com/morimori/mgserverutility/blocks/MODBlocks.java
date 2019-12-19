@@ -17,6 +17,9 @@ public class MODBlocks {
 	public static Block VANADIUM_STEEL_BLOCK = new Block(Material.IRON).setRegistryName(MGServerUtility.MODID,
 			"vanadium_steel_block").setHardness(1.5f).setResistance(3).setCreativeTab(MODCreativeTab.MGTAB)
 			.setUnlocalizedName("vanadium_steel_block");
+	public static Block VOID_BLOCK = new Block(Material.IRON).setRegistryName(MGServerUtility.MODID,
+			"void_block").setHardness(1.5f).setResistance(3).setCreativeTab(MODCreativeTab.MGTAB)
+			.setUnlocalizedName("void_block");
 
 	public static Block NAQUADAH_ORE = new Block(Material.IRON).setRegistryName(MGServerUtility.MODID,
 			"naquadah_ore").setHardness(1.5f).setResistance(3).setCreativeTab(MODCreativeTab.MGTAB)
@@ -54,7 +57,8 @@ public class MODBlocks {
 				VANADIUM_STEEL_BLOCK,
 				TEST_BLOCK,
 				OOD_BLOCK,
-				NAQUADAH_ORE
+				NAQUADAH_ORE,
+				VOID_BLOCK
 
 		));
 		return l;

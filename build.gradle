@@ -1,0 +1,76 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven { url = "https://files.minecraftforge.net/maven" }
+        
+
+      
+        
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+    }
+}
+
+repositories {
+    maven {url = "http://dvs1.progwml6.com/files/maven"}
+    maven {url = "https://minecraft.curseforge.com/api/maven/"}
+    maven {url = "https://modmaven.k-4u.nl"}
+    maven {url = "http://maven.k-4u.nl"}
+    maven { name='TCL'; url='https://maven.mcmoddev.com' }
+    maven { name = 'forgelin'; url = 'http://maven.shadowfacts.net' }
+    
+}
+
+
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+version = "1.0.0"
+group = "com.morimori.mgserverutility" 
+archivesBaseName = "mgserverutility"
+
+sourceCompatibility = targetCompatibility = '1.8' 
+compileJava {
+    sourceCompatibility = targetCompatibility = '1.8'
+}
+
+minecraft {
+    version = "1.12.2-14.23.5.2847"
+    runDir = "run"
+    
+
+    mappings = "snapshot_20171003"
+    
+}
+
+dependencies {
+ 
+
+    deobfCompile "slimeknights.mantle:Mantle:${mantle_version}"
+    deobfCompile "slimeknights:TConstruct:${tc_version}"
+
+    deobfProvided "mezz.jei:jei_${mc_version}:${jei_version}:api"
+    runtime "mezz.jei:jei_${mc_version}:${jei_version}"
+    
+    deobfCompile("net.ndrei:tesla-core-lib:${project.teslacorelib_mc_version}-${project.teslacorelib_version}") { changing = true }
+    
+    deobfCompile "industrial-foregoing:industrialforegoing-1.12.2:1.12.13:237"
+
+}
+
+processResources {
+
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
+
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+                
+
+        expand 'version':project.version, 'mcversion':project.minecraft.version
+    }
+
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+}

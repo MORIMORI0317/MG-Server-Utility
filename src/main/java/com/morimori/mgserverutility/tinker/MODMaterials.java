@@ -52,7 +52,7 @@ public class MODMaterials {
 		TinkerRegistry.integrate(carbon, "Carbon").toolforge()
 				.preInit();
 		TinkerMaterials.materials.add(carbon);
-		TinkerRegistry.addMaterialStats(carbon, new BowMaterialStats(0.05f, 65536, 1));
+		TinkerRegistry.addMaterialStats(carbon, new BowMaterialStats(Integer.MAX_VALUE, 65536, 1));
 
 		TinkerRegistry.addMaterialStats(blade_wood,
 				new HeadMaterialStats(3500, 19, 10, HarvestLevels.COBALT),
@@ -109,8 +109,7 @@ public class MODMaterials {
 		TinkerRegistry.addMaterialStats(ultimet, new BowMaterialStats(0.05f, 1024, 256));
 
 		TinkerRegistry.integrate(MODFluids.MOLTEN_NAQUADAH, "Naquadah").toolforge()
-		.preInit();
-
+				.preInit();
 
 	}
 

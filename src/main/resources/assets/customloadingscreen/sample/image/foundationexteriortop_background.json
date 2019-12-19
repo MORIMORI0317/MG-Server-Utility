@@ -1,0 +1,18 @@
+{
+  "parent": "builtin/image",
+  "image": "scp:textures/blocks/foundationexteriortop.png",
+  "position_type": "TOP_RIGHT",
+  "offset_pos": "TOP_RIGHT",
+  "position": {
+    "x": "0",
+    "y": "0",
+    "width": "screen_width",
+    "height": "screen_height"
+  },
+  "texture": {
+    "x": "0",
+    "y": "0",
+    "width": "screen_width / 16",
+    "height": "screen_height / 16"
+  }
+}

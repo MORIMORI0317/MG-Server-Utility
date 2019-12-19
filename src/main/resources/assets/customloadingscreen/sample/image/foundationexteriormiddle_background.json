@@ -1,0 +1,18 @@
+{
+  "parent": "sample/foundationexteriortop_background",
+  "image": "scp:textures/blocks/foundationexteriormiddle.png",
+  "position_type": "TOP_RIGHT",
+  "offset_pos": "TOP_RIGHT",
+  "position": {
+    "x": "0",
+    "y": "screen_height / 16",
+    "width": "screen_width",
+    "height": "screen_height / 16"
+  },
+  "texture": {
+    "x": "0",
+    "y": "0",
+    "width": "screen_width / 16",
+    "height": "1"
+  }
+}
