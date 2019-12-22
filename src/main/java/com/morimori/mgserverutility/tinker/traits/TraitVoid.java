@@ -28,22 +28,20 @@ public class TraitVoid extends AbstractTrait {
 		if (target.isNonBoss() && target.dimension != MGConfig.OOD_ID) {
 
 			player.world.playSound((EntityPlayer) null, target.getPosition(), MGSoundEvents.TEREPORTOUTOOFDIMENTION,
-					SoundCategory.AMBIENT, 15, 1);
+					SoundCategory.AMBIENT, 2, 1);
 			player.world.spawnParticle(EnumParticleTypes.SMOKE_LARGE, target.getPosition().getX(),
 					target.getPosition().getY(),
 					target.getPosition().getZ(), 10, 10, 10, 100);
 			Random r = new Random();
 
-			int x = target.getPosition().getX();
-			int y = target.getPosition().getY();
-			int z = target.getPosition().getZ();
+			for (int i = 0; i < 128; i++) {
+				player.world.spawnParticle(EnumParticleTypes.SMOKE_LARGE, target.getPosition().getX() + r.nextFloat(),
+						target.getPosition().getY() + ((float) (r.nextInt((int) ((target.height + 0.5f) * 100))) / 100),
+						target.getPosition().getZ() + r.nextFloat(), 0,
+						0, 0);
+			}
 
-			player.world.spawnParticle(EnumParticleTypes.SMOKE_LARGE, x, y, z, 1, 1, 1);
-
-			MGTereporter
-					.of(target.getPosition().getX(), 110,
-							target.getPosition().getZ(), MGConfig.OOD_ID)
-					.teleport(target);
+			MGTereporter.of(target.getPosition().getX(), 110,target.getPosition().getZ(), MGConfig.OOD_ID, target).start();
 
 		}
 

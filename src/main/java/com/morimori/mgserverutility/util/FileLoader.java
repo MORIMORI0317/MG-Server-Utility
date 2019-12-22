@@ -7,7 +7,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import com.morimori.mgserverutility.MGServerUtility;
 
@@ -65,9 +67,19 @@ public class FileLoader {
 	}
 
 	public static void addWirteTextFile(String pass, String dec) {
-		List<String> list = new ArrayList<String>();
-		list.addAll(loadTextFile(pass));
-		list.add(dec);
-		wirteTextFile(pass, list);
+		Set<String> set = new HashSet<String>();
+		set.addAll(loadTextFile(pass));
+		set.add(dec);
+		set.remove("");
+		wirteTextFile(pass, new ArrayList<String>(set));
+		MGServerUtility.LOGGER.info("Failed to add File[" + pass + "] in String[" + dec + "]");
+	}
+
+	public static void arrangeTextFile(String pass) {
+		Set<String> set = new HashSet<String>();
+		set.addAll(loadTextFile(pass));
+		set.remove("");
+		wirteTextFile(pass, new ArrayList<String>(set));
+		MGServerUtility.LOGGER.info("Failed to arrange File[" + pass + "]");
 	}
 }

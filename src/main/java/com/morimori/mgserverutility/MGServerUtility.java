@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 import com.morimori.mgserverutility.SCP.MODClockworksRecipes;
 import com.morimori.mgserverutility.config.MGConfig;
 import com.morimori.mgserverutility.fluids.MODFluids;
+import com.morimori.mgserverutility.handler.MobHandler;
 import com.morimori.mgserverutility.items.MIDOreDictionary;
 import com.morimori.mgserverutility.items.MODItems;
 import com.morimori.mgserverutility.proxy.ClientProxy;
@@ -29,7 +30,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class MGServerUtility {
 	public static final String MODID = "mgserverutility";
 	public static final String NAME = "MG Server Utility";
-	public static final String VERSION = "Build 9";
+	public static final String VERSION = "Build 10";
 
 	public static Logger LOGGER;
 
@@ -70,7 +71,7 @@ public class MGServerUtility {
 		MIDOreDictionary.registOredict();
 		MODItems.posInit();
 		MGSlashblade.Init();
-
+		MobHandler.init();
 	}
 
 	@EventHandler

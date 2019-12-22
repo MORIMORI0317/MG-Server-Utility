@@ -21,13 +21,23 @@ public class GuiHandler {
 	@SubscribeEvent
 	public static void onGui(GuiScreenEvent.InitGuiEvent.Post e) {
 		if (e.getGui() instanceof GuiMainMenu) {
-			e.getButtonList()
-					.add(new GuiButton(114, e.getButtonList().get(1).x, e.getButtonList().get(1).y,
-							I18n.format("menu.joinserver")));
 
-			//e.getButtonList().remove(e.getButtonList().get(1));
-						e.getButtonList().get(1).x = e.getGui().width / 2 + 50;
-			//			e.getButtonList().get(1).width = 98;
+			if (!MGConfig.isMultibuttun) {
+				e.getButtonList()
+						.add(new GuiButton(114, e.getButtonList().get(1).x, e.getButtonList().get(1).y,
+								I18n.format("menu.joinserver")));
+
+				e.getButtonList().remove(e.getButtonList().get(1));
+
+			} else {
+				e.getButtonList()
+						.add(new GuiButton(114, e.getButtonList().get(1).x, e.getButtonList().get(1).y,
+								98, e.getButtonList().get(1).height,
+								I18n.format("menu.joinserver")));
+
+				e.getButtonList().get(1).x = e.getGui().width / 2 + 2;
+				e.getButtonList().get(1).width = 98;
+			}
 
 		}
 

@@ -15,7 +15,10 @@ public class PlayerHandler {
 	public static void onPlayerJoin(PlayerLoggedInEvent e) {
 
 		FileLoader.addWirteTextFile("mgsververutility_joinplayerlist.txt", e.player.getName());
-		LootBag.HEAD_LOOT.put(ItemHelper.createPlayerHead(e.player.getName()), 1);
+		LootBag.HEAD_LOOT.clear();
+		for (String str : FileLoader.loadTextFile("mgsververutility_joinplayerlist.txt")) {
+			LootBag.HEAD_LOOT.put(ItemHelper.createPlayerHead(str), 1);
+		}
 
 	}
 }

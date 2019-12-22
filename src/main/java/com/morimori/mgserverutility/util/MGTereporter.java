@@ -8,27 +8,29 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ITeleporter;
 
-public class MGTereporter implements ITeleporter {
+public class MGTereporter extends Thread implements ITeleporter {
 	public final double posX, posY, posZ;
 	public final int dim;
+	public final @Nullable Entity entity;
 
-	public static MGTereporter of(double x, double y, double z, int dim) {
-		return new MGTereporter(x, y, z, dim);
+	public static MGTereporter of(double x, double y, double z, int dim, @Nullable Entity target) {
+		return new MGTereporter(x, y, z, dim, target);
 	}
 
-	public static MGTereporter of(Entity entity) {
-		return new MGTereporter(entity.posX, entity.posY, entity.posZ, entity.dimension);
+	public static MGTereporter of(@Nullable Entity entity) {
+		return new MGTereporter(entity.posX, entity.posY, entity.posZ, entity.dimension, entity);
 	}
 
-	public static MGTereporter of(BlockPos pos, int dim) {
-		return new MGTereporter(pos.getX() + 0.5D, pos.getY() + 0.1D, pos.getZ() + 0.5D, dim);
+	public static MGTereporter of(BlockPos pos, int dim, @Nullable Entity entity) {
+		return new MGTereporter(pos.getX() + 0.5D, pos.getY() + 0.1D, pos.getZ() + 0.5D, dim, entity);
 	}
 
-	private MGTereporter(double x, double y, double z, int d) {
+	private MGTereporter(double x, double y, double z, int d, @Nullable Entity target) {
 		posX = x;
 		posY = y;
 		posZ = z;
 		dim = d;
+		entity = target;
 	}
 
 	@Override
@@ -43,17 +45,24 @@ public class MGTereporter implements ITeleporter {
 		}
 	}
 
-	@Nullable
-	public Entity teleport(@Nullable Entity entity) {
-		if (entity == null || entity.world.isRemote) {
-			return entity;
-		}
+	@Override
+	public void run() {
+		try {
 
-		if (dim != entity.dimension) {
-			return entity.changeDimension(dim, this);
-		}
+			this.sleep(100);
+			if (entity == null || entity.world.isRemote) {
+				this.stop();
+			} else if (dim != entity.dimension) {
+				entity.changeDimension(dim, this);
+				this.stop();
+			} else {
+				placeEntity(entity.world, entity, entity.rotationYaw);
+				this.stop();
+			}
+		} catch (InterruptedException e) {
 
-		placeEntity(entity.world, entity, entity.rotationYaw);
-		return entity;
+			e.printStackTrace();
+		}
+		this.stop();
 	}
 }

@@ -42,7 +42,7 @@ public class LootBag {
 
 		INM_LOOT.put(new ItemStack(MODItems.YJ_LOTTERY_BAG), 1);
 		INM_LOOT.put(new ItemStack(MODItems.YATTAZE_RECORD), 3);
-
+		FileLoader.arrangeTextFile("mgsververutility_joinplayerlist.txt");
 		for (String str : FileLoader.loadTextFile("mgsververutility_joinplayerlist.txt")) {
 			HEAD_LOOT.put(ItemHelper.createPlayerHead(str), 1);
 		}

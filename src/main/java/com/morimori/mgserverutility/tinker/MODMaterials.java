@@ -43,7 +43,7 @@ public class MODMaterials {
 		TinkerRegistry.integrate(vanadiumsteel, MODFluids.MOLTEN_VANADIUM_STEEL, "VanadiumSteel").toolforge()
 				.preInit();
 		TinkerMaterials.materials.add(vanadiumsteel);
-		TinkerRegistry.addMaterialStats(vanadiumsteel, new BowMaterialStats(2, 64, 64));
+		TinkerRegistry.addMaterialStats(vanadiumsteel, new BowMaterialStats(2, 16, 64));
 
 		TinkerRegistry.addMaterialStats(carbon,
 				new HeadMaterialStats(64, 1, 1, HarvestLevels.DIAMOND),
@@ -52,7 +52,7 @@ public class MODMaterials {
 		TinkerRegistry.integrate(carbon, "Carbon").toolforge()
 				.preInit();
 		TinkerMaterials.materials.add(carbon);
-		TinkerRegistry.addMaterialStats(carbon, new BowMaterialStats(Integer.MAX_VALUE, 65536, 1));
+		TinkerRegistry.addMaterialStats(carbon, new BowMaterialStats(50, 128, 1024));
 
 		TinkerRegistry.addMaterialStats(blade_wood,
 				new HeadMaterialStats(3500, 19, 10, HarvestLevels.COBALT),
@@ -88,7 +88,7 @@ public class MODMaterials {
 		TinkerRegistry.integrate(naquadahalloy, MODFluids.MOLTEN_NAQUADAH_ALLOY, "NaquadahAlloy").toolforge()
 				.preInit();
 		TinkerMaterials.materials.add(naquadahalloy);
-		TinkerRegistry.addMaterialStats(naquadahalloy, new BowMaterialStats(0.05f, 4, 666));
+		TinkerRegistry.addMaterialStats(naquadahalloy, new BowMaterialStats(50, 4, 666));
 
 		TinkerRegistry.addMaterialStats(tungstensteel,
 				new HeadMaterialStats(2560, 32, 16, COBALT),
@@ -97,7 +97,7 @@ public class MODMaterials {
 		TinkerRegistry.integrate(tungstensteel, MODFluids.MOLTEN_TUNGSTEN_STEEL, "TungstenSteel").toolforge()
 				.preInit();
 		TinkerMaterials.materials.add(tungstensteel);
-		TinkerRegistry.addMaterialStats(tungstensteel, new BowMaterialStats(1, 5, 10));
+		TinkerRegistry.addMaterialStats(tungstensteel, new BowMaterialStats(4, 8, 128));
 
 		TinkerRegistry.addMaterialStats(ultimet,
 				new HeadMaterialStats(4096, 16, 24, 5),
@@ -106,7 +106,7 @@ public class MODMaterials {
 		TinkerRegistry.integrate(ultimet, MODFluids.MOLTEN_ULTIMET, "Ultimet").toolforge()
 				.preInit();
 		TinkerMaterials.materials.add(ultimet);
-		TinkerRegistry.addMaterialStats(ultimet, new BowMaterialStats(0.05f, 1024, 256));
+		TinkerRegistry.addMaterialStats(ultimet, new BowMaterialStats(50, 64, 1024));
 
 		TinkerRegistry.integrate(MODFluids.MOLTEN_NAQUADAH, "Naquadah").toolforge()
 				.preInit();

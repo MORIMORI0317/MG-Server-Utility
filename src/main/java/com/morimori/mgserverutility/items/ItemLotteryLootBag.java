@@ -29,9 +29,15 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class ItemLotteryLootBag extends Item {
 
 	private Map<ItemStack, Integer> ItemList;
+	private boolean isHide;
 
 	public ItemLotteryLootBag(String name, Map<ItemStack, Integer> itemlistIn) {
+		this(name, itemlistIn, false);
+	}
+
+	public ItemLotteryLootBag(String name, Map<ItemStack, Integer> itemlistIn, boolean isHideIn) {
 		this.ItemList = itemlistIn;
+		this.isHide = isHideIn;
 	}
 
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
@@ -83,21 +89,22 @@ public class ItemLotteryLootBag extends Item {
 		} else {
 			tooltip.add(TextFormatting.GRAY + I18n.format("item.blade_lottery_loot_bag.cont.desc", 1));
 		}
-
-		tooltip.add(TextFormatting.GRAY + I18n.format("item.blade_lottery_loot_bag.following.desc"));
-		if (ItemList.size() <= 5) {
-			for (ItemStack it : ItemList.keySet()) {
-				tooltip.add(it.getRarity().getColor() + it.getDisplayName());
-			}
-		} else {
-			int n = 0;
-			for (ItemStack it : ItemList.keySet()) {
-				tooltip.add(it.getRarity().getColor() + it.getDisplayName());
-				n++;
-				if (n >= 5) {
-					tooltip.add(TextFormatting.GRAY
-							+ I18n.format("container.shulkerBox.more", ItemList.size() - 5));
-					break;
+		if (!this.isHide) {
+			tooltip.add(TextFormatting.GRAY + I18n.format("item.blade_lottery_loot_bag.following.desc"));
+			if (ItemList.size() <= 5) {
+				for (ItemStack it : ItemList.keySet()) {
+					tooltip.add(it.getRarity().getColor() + it.getDisplayName());
+				}
+			} else {
+				int n = 0;
+				for (ItemStack it : ItemList.keySet()) {
+					tooltip.add(it.getRarity().getColor() + it.getDisplayName());
+					n++;
+					if (n >= 5) {
+						tooltip.add(TextFormatting.GRAY
+								+ I18n.format("container.shulkerBox.more", ItemList.size() - 5));
+						break;
+					}
 				}
 			}
 		}
@@ -107,7 +114,7 @@ public class ItemLotteryLootBag extends Item {
 		if (this.isInCreativeTab(tab)) {
 			items.add(new ItemStack(this));
 			items.add(ItemHelper.createLootBag(this, 1));
-			items.add(ItemHelper.createLootBag(this, 2));
+			items.add(ItemHelper.createLootBag(this, 7));
 			items.add(ItemHelper.createLootBag(this, 63));
 		}
 	}

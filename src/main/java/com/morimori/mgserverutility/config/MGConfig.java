@@ -7,6 +7,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class MGConfig {
 	public static Configuration config;
 	public static String ServerIp;
+	public static boolean isMultibuttun;
 	public static int OOD_ID;
 
 	public static void loadc(FMLPreInitializationEvent event) {
@@ -30,6 +31,11 @@ public class MGConfig {
 		ServerIp = config
 				.get("general_client", "IP", "scp.mgsv.xyz", "SCP Server IP")
 				.getString();
+
+		isMultibuttun = config
+				.get("general_client", "Effectiveness", false, "Whether to display the multi-play button on the title screen.")
+				.getBoolean();
+
 
 		if (config.hasChanged())
 			save();

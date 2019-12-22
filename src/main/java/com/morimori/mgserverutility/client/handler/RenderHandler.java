@@ -1,23 +1,23 @@
 package com.morimori.mgserverutility.client.handler;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.morimori.mgserverutility.MGServerUtility;
 
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.item.Item;
-import net.minecraftforge.client.event.RenderLivingEvent;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 
 @EventBusSubscriber(modid = MGServerUtility.MODID, value = Side.CLIENT)
 public class RenderHandler {
-	public static List<Item> colerItem = new ArrayList<Item>();
+	public static final ResourceLocation bloodstone = new ResourceLocation("scp", "shaders/bloodstone.json");
 
 	@SubscribeEvent
-	public static void onRenderLivingPre(RenderLivingEvent.Pre<EntityLivingBase> e) {
+	public static void onHUDrender(RenderGameOverlayEvent.Post e) {
+		//RenderHelper.setShaders(bloodstone);
+
+		GlStateManager.color(0, 0, 1);
 
 	}
 

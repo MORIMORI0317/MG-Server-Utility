@@ -1,7 +1,6 @@
 package com.morimori.mgserverutility.blocks;
 
 import com.morimori.mgserverutility.config.MGConfig;
-import com.morimori.mgserverutility.util.MGTereporter;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -56,13 +55,11 @@ public class BlockTest extends Block {
 					}
 				}
 				if (foundBlock) {
-					MGTereporter.of(otherWorldPos.getX() + 0.5, otherWorldPos.getY(), otherWorldPos.getZ() + 0.5, MGConfig.OOD_ID)
-							.teleport(playerIn);
+
 				}
 				if (!foundBlock) {
 					otherWorld.setBlockState(otherWorldPos.down(), Blocks.AIR.getDefaultState());
-					MGTereporter.of(otherWorldPos.getX() + 0.5, otherWorldPos.getY(), otherWorldPos.getZ() + 0.5, MGConfig.OOD_ID)
-							.teleport(playerIn);
+				//	MGTereporter.of(target.getPosition().getX(), 110,target.getPosition().getZ(), MGConfig.OOD_ID, target).run();
 				}
 			}
 
@@ -87,13 +84,11 @@ public class BlockTest extends Block {
 					}
 				}
 				if (foundBlock) {
-					MGTereporter.of(overWorldPos.getX() + 0.5, overWorldPos.getY(), overWorldPos.getZ() + 0.5, 0)
-							.teleport(playerIn);
+
 				}
 				if (!foundBlock) {
 					overWorld.setBlockState(overWorldPos.down(), Blocks.AIR.getDefaultState());
-					MGTereporter.of(overWorldPos.getX() + 0.5, overWorldPos.getY(), overWorldPos.getZ() + 0.5, 0)
-							.teleport(playerIn);
+
 				}
 			}
 		}

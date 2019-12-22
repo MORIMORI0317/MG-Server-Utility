@@ -136,14 +136,13 @@ public class MODItems {
 			.setRegistryName(MGServerUtility.MODID, "blade_lottery_loot_bag")
 			.setUnlocalizedName("blade_lottery_loot_bag").setCreativeTab(MODCreativeTab.MGTAB);
 
-	public static Item HEAD_LOTTERY_BAG = new ItemLotteryLootBag("head", LootBag.HEAD_LOOT)
+	public static Item HEAD_LOTTERY_BAG = new ItemLotteryLootBag("head", LootBag.HEAD_LOOT, true)
 			.setRegistryName(MGServerUtility.MODID, "head_lottery_loot_bag")
 			.setUnlocalizedName("head_lottery_loot_bag").setCreativeTab(MODCreativeTab.MGTAB);
 
 	public static Item GUN_LOTTERY_BAG = new ItemLotteryLootBag("gun", LootBag.GUN_LOOT)
 			.setRegistryName(MGServerUtility.MODID, "gun_lottery_loot_bag")
 			.setUnlocalizedName("gun_lottery_loot_bag").setCreativeTab(MODCreativeTab.MGTAB);
-
 
 	public static Item TEST_ITEM = new ItemTest()
 			.setRegistryName(MGServerUtility.MODID, "test")
