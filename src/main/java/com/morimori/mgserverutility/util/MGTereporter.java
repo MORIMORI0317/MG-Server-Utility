@@ -49,7 +49,7 @@ public class MGTereporter extends Thread implements ITeleporter {
 	public void run() {
 		try {
 
-			this.sleep(100);
+			this.sleep(250);
 			if (entity == null || entity.world.isRemote) {
 				this.stop();
 			} else if (dim != entity.dimension) {

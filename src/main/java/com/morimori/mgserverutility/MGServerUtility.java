@@ -3,6 +3,7 @@ package com.morimori.mgserverutility;
 import org.apache.logging.log4j.Logger;
 
 import com.morimori.mgserverutility.SCP.MODClockworksRecipes;
+import com.morimori.mgserverutility.alchemistry.MGAlchemistry;
 import com.morimori.mgserverutility.config.MGConfig;
 import com.morimori.mgserverutility.fluids.MODFluids;
 import com.morimori.mgserverutility.handler.MobHandler;
@@ -30,7 +31,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class MGServerUtility {
 	public static final String MODID = "mgserverutility";
 	public static final String NAME = "MG Server Utility";
-	public static final String VERSION = "Build 10";
+	public static final String VERSION = "Build 11";
 
 	public static Logger LOGGER;
 
@@ -56,6 +57,7 @@ public class MGServerUtility {
 		MGBiomes.init();
 		MGDimentions.init();
 		MGSlashblade.preInit();
+		MGAlchemistry.preInit();
 		GameRegistry.registerWorldGenerator(new BlockGenerator(), 3);
 	}
 
@@ -69,15 +71,18 @@ public class MGServerUtility {
 		MODMaterials.init();
 		MODTConst.init();
 		MIDOreDictionary.registOredict();
-		MODItems.posInit();
+
 		MGSlashblade.Init();
 		MobHandler.init();
+		MGAlchemistry.Init();
 	}
 
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		MODTConst.postinit();
 		MGSlashblade.posInit();
+		MGAlchemistry.posInit();
+		MODItems.posInit();
 	}
 
 }

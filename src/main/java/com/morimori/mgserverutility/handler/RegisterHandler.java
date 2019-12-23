@@ -47,8 +47,7 @@ public class RegisterHandler {
 				MGSoundEvents.KEIZOKU_HIGH_SCHOOL,
 				MGSoundEvents.TEREPORTOUTOOFDIMENTION
 
-
-				);
+		);
 
 	}
 
@@ -119,6 +118,7 @@ public class RegisterHandler {
 		registerFluidModel(MODBlocks.MOLTEN_TUNGSTEN_STEEL_BLOCK, "tung");
 		registerFluidModel(MODBlocks.MOLTEN_ULTIMET_BLOCK, "ulti");
 		registerFluidModel(MODBlocks.MOLTEN_NAQUADAH_BLOCK, "naqu");
+
 	}
 
 	@SideOnly(Side.CLIENT)

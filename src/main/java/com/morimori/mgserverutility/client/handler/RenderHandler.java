@@ -2,7 +2,6 @@ package com.morimori.mgserverutility.client.handler;
 
 import com.morimori.mgserverutility.MGServerUtility;
 
-import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
@@ -17,7 +16,7 @@ public class RenderHandler {
 	public static void onHUDrender(RenderGameOverlayEvent.Post e) {
 		//RenderHelper.setShaders(bloodstone);
 
-		GlStateManager.color(0, 0, 1);
+		//GlStateManager.color(0, 0, 1);
 
 	}
 
