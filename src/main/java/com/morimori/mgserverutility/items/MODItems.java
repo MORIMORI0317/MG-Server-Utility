@@ -36,94 +36,94 @@ public class MODItems {
 	public static Item KAME_STEEL_INGOT = new Item()
 			.setRegistryName(MGServerUtility.MODID, "kame_steel_ingot")
 			.setUnlocalizedName("kame_steel_ingot")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 
 	public static Item VOID_INGOT = new Item()
 			.setRegistryName(MGServerUtility.MODID, "void_ingot")
 			.setUnlocalizedName("void_ingot")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 	public static Item VOID_NUGGET = new Item()
 			.setRegistryName(MGServerUtility.MODID, "void_nugget")
 			.setUnlocalizedName("void_nugget")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 	public static Item CYCLOPS_RECORD = new IItemRecord("cyclops", MGSoundEvents.CYCLOPS_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "cyclops_record")
 			.setUnlocalizedName("record")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 	public static Item HOLOGRAM_RECORD = new IItemRecord("hologram", MGSoundEvents.HOLOGRAM_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "hologram_record")
 			.setUnlocalizedName("record")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 	public static Item YATTAZE_RECORD = new IItemRecord("yattaze", MGSoundEvents.YATTAZE_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "yattaze_record")
 			.setUnlocalizedName("record")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 	public static Item MARENOL_RECORD = new IItemRecord("marenol", MGSoundEvents.MARENOL_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "marenol_record")
 			.setUnlocalizedName("record")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 	public static Item MOPEMOPE_RECORD = new IItemRecord("mopemope", MGSoundEvents.MOPEMOPE_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "mopemope_record")
 			.setUnlocalizedName("record")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 	public static Item BREAK_THE_NIGHT_ARAN_REMIX_REDALICE_RECORD = new IItemRecord(
 			"break_the_night_aran_remix_redalice", MGSoundEvents.BREAK_THE_NIGHT_ARAN_REMIX_REDALICE_MUSIC)
 					.setRegistryName(MGServerUtility.MODID, "break_the_night_aran_remix_redalice_record")
 					.setUnlocalizedName("record")
-					.setCreativeTab(MODCreativeTab.MGTAB);
+					/*MGTAB*/;
 	public static Item CHAOS_MUSIC_RECORD = new IItemRecord("chaos_music", MGSoundEvents.CHAOS_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "chaos_music_record")
 			.setUnlocalizedName("record")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 	public static Item SNAKE_EATER_RECORD = new IItemRecord("snake_eater", MGSoundEvents.SNAKE_EATER_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "snake_eater_record")
 			.setUnlocalizedName("record")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 	public static Item TAKARAZIMA_RECORD = new IItemRecord("sakanak", MGSoundEvents.TAKARAZIMA_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "sakanak_record")
 			.setUnlocalizedName("record")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 	public static Item YSYOU_RECORD = new IItemRecord("ysyou", MGSoundEvents.YSYOU_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "ysyou_record")
 			.setUnlocalizedName("record")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 	public static Item HAKUSINKARATEBU_RECORD = new IItemRecord("hakusinkaratebu", MGSoundEvents.HAKUSINKARATEBU_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "hakusinkaratebu_record")
 			.setUnlocalizedName("record")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 	public static Item YJINTABYU_RECORD = new IItemRecord("yjintabyu-", MGSoundEvents.YJINTABYU_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "yjintabyu_record")
 			.setUnlocalizedName("record")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 	public static Item KONGYO_RECORD = new IItemRecord("kongyo", MGSoundEvents.KONGYO_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "kongyo_record")
 			.setUnlocalizedName("record")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 	public static Item IEVAN_POLKKA_RECORD = new IItemRecord("ievan_polkka", MGSoundEvents.IEVAN_POLKKA_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "ievan_polkka_record")
 			.setUnlocalizedName("record")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 	public static Item EVANGELION_8TH_APOSTLE_RECORD = new IItemRecord("evangelion_8th_apostle",
 			MGSoundEvents.EVANGELION_8TH_APOSTLE_MUSIC)
 					.setRegistryName(MGServerUtility.MODID, "evangelion_8th_apostle_record")
 					.setUnlocalizedName("record")
-					.setCreativeTab(MODCreativeTab.MGTAB);
+					/*MGTAB*/;
 	public static Item SOVIET_MARCH_RECORD = new IItemRecord("soviet_march", MGSoundEvents.SOVIET_MARCH_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "soviet_march_record")
 			.setUnlocalizedName("record")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 	public static Item PEPSIMAN_THEME_RECORD = new IItemRecord("pepsiman_theme", MGSoundEvents.PEPSIMAN_THEME_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "pepsiman_theme_record")
 			.setUnlocalizedName("record")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 	public static Item AWAKENING_RECORD = new IItemRecord("awakening", MGSoundEvents.AWAKENING_MUSIC)
 			.setRegistryName(MGServerUtility.MODID, "awakening_record")
 			.setUnlocalizedName("record")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 	public static Item KEIZOKU_HIGH_RECORD = new IItemRecord("keizoku_high_school", MGSoundEvents.KEIZOKU_HIGH_SCHOOL)
 			.setRegistryName(MGServerUtility.MODID, "keizoku_high_school_record")
 			.setUnlocalizedName("record")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 
 	public static Item RECORD_LOTTERY_BAG = new ItemLotteryLootBag("record", LootBag.RECORD_LOOT)
 			.setRegistryName(MGServerUtility.MODID, "record_lottery_loot_bag")
@@ -152,36 +152,36 @@ public class MODItems {
 	public static Item TEST_ITEM = new ItemTest()
 			.setRegistryName(MGServerUtility.MODID, "test")
 			.setUnlocalizedName("test")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 
 	public static Item IKISUGINITHI_SWORD = new ItemIkisuginithiSword(MGToolMaterial.iKISUGINITHI)
 			.setRegistryName(MGServerUtility.MODID, "ikisuginithi_sword")
 			.setUnlocalizedName("ikisuginithi_sword")
-			.setCreativeTab(MODCreativeTab.MGTAB);
+			/*MGTAB*/;
 
 	public static Item iKISUGINITHI_HELMET = new ItemIkisuginithiAromer(MGArmorMaterial.IKISUGINITHI, 1,
 			EntityEquipmentSlot.HEAD)
 					.setRegistryName(MGServerUtility.MODID, "ikisuginithi_helmet")
 					.setUnlocalizedName("ikisuginithi_helmet")
-					.setCreativeTab(MODCreativeTab.MGTAB);
+					/*MGTAB*/;
 
 	public static Item iKISUGINITHI_CHESTPLATE = new ItemIkisuginithiAromer(MGArmorMaterial.IKISUGINITHI, 1,
 			EntityEquipmentSlot.CHEST)
 					.setRegistryName(MGServerUtility.MODID, "ikisuginithi_chestplate")
 					.setUnlocalizedName("ikisuginithi_chestplate")
-					.setCreativeTab(MODCreativeTab.MGTAB);
+					/*MGTAB*/;
 
 	public static Item iKISUGINITHI_LEGGINGS = new ItemIkisuginithiAromer(MGArmorMaterial.IKISUGINITHI, 2,
 			EntityEquipmentSlot.LEGS)
 					.setRegistryName(MGServerUtility.MODID, "ikisuginithi_leggings")
 					.setUnlocalizedName("ikisuginithi_leggings")
-					.setCreativeTab(MODCreativeTab.MGTAB);
+					/*MGTAB*/;
 
 	public static Item iKISUGINITHI_BOOTS = new ItemIkisuginithiAromer(MGArmorMaterial.IKISUGINITHI, 1,
 			EntityEquipmentSlot.FEET)
 					.setRegistryName(MGServerUtility.MODID, "ikisuginithi_boots")
 					.setUnlocalizedName("ikisuginithi_boots")
-					.setCreativeTab(MODCreativeTab.MGTAB);
+					/*MGTAB*/;
 
 	public static Item ITEM_LOTTERY_BAG = new ItemItemLotteryLootBag("item", LootBag.GUN_LOOT)
 			.setRegistryName(MGServerUtility.MODID, "item_lottery_loot_bag")

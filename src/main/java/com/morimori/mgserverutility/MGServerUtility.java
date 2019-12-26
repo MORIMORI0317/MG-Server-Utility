@@ -6,6 +6,7 @@ import com.morimori.mgserverutility.SCP.MODClockworksRecipes;
 import com.morimori.mgserverutility.alchemistry.MGAlchemistry;
 import com.morimori.mgserverutility.config.MGConfig;
 import com.morimori.mgserverutility.fluids.MODFluids;
+import com.morimori.mgserverutility.hac.MGHeatAndClimeit;
 import com.morimori.mgserverutility.handler.MobHandler;
 import com.morimori.mgserverutility.items.MIDOreDictionary;
 import com.morimori.mgserverutility.items.MODItems;
@@ -32,7 +33,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class MGServerUtility {
 	public static final String MODID = "mgserverutility";
 	public static final String NAME = "MG Server Utility";
-	public static final String VERSION = "Build 12";
+	public static final String VERSION = "Build 13";
 
 	public static Logger LOGGER;
 
@@ -61,6 +62,7 @@ public class MGServerUtility {
 		MGAlchemistry.preInit();
 		GameRegistry.registerWorldGenerator(new BlockGenerator(), 3);
 		GameRegistry.registerTileEntity(TileOODTereporter.class, MODID + "ood_telepoter");
+		MGHeatAndClimeit.preInit();
 	}
 
 	@EventHandler
@@ -77,6 +79,7 @@ public class MGServerUtility {
 		MobHandler.init();
 		MGAlchemistry.Init();
 		MGSoundEvents.ListRegSound();
+		MGHeatAndClimeit.Init();
 	}
 
 	@EventHandler
@@ -85,7 +88,7 @@ public class MGServerUtility {
 		MGSlashblade.posInit();
 		MGAlchemistry.posInit();
 		MODItems.posInit();
-
+		MGHeatAndClimeit.posInit();
 	}
 
 }
