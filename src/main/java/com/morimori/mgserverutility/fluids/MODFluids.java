@@ -1,11 +1,15 @@
 package com.morimori.mgserverutility.fluids;
 
+import com.morimori.mgserverutility.MGServerUtility;
+
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
 import slimeknights.tconstruct.library.Util;
 import slimeknights.tconstruct.library.fluid.FluidMolten;
 
 public class MODFluids {
+
 	public static Fluid MOLTEN_TELEKILL_ALLOY = new FluidMolten("telekillalloy", 3430212);
 	public static Fluid MOLTEN_VANADIUM_STEEL = new FluidMolten("vanadiumsteel", 13882323);
 	public static Fluid MOLTEN_DATA_EXPUNGED = new FluidMolten("dataexpunged", 0);
@@ -14,6 +18,9 @@ public class MODFluids {
 	public static Fluid MOLTEN_TUNGSTEN_STEEL = new FluidMolten("tungstensteel", 2964308);
 	public static Fluid MOLTEN_ULTIMET = new FluidMolten("ultimet", 9085907);
 	public static Fluid MOLTEN_NAQUADAH = new FluidMolten("naquadah", Integer.parseInt("100F0F", 16));
+	public static Fluid MOLTEN_KAME_STEEL = new Fluid("kame_steel",
+			new ResourceLocation(MGServerUtility.MODID, "blocks/fluids/molten_metal"),
+			new ResourceLocation(MGServerUtility.MODID, "blocks/fluids/molten_metal_flow"));
 
 	public static void regFluid() {
 
@@ -25,6 +32,7 @@ public class MODFluids {
 		FluidRegister(MOLTEN_TUNGSTEN_STEEL, 900);
 		FluidRegister(MOLTEN_ULTIMET, 8000);
 		FluidRegister(MOLTEN_NAQUADAH, 1000);
+		//FluidRegister(MOLTEN_KAME_STEEL, 36);
 	}
 
 	private static void FluidRegister(Fluid fluid, int temp) {

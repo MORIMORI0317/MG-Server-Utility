@@ -29,7 +29,13 @@ public class MODBlocks {
 			"out_of_dimension_block").setHardness(1.5f).setResistance(3).setCreativeTab(MODCreativeTab.MGTAB)
 			.setUnlocalizedName("out_of_dimension_block");
 
-	public static Block TEST_BLOCK = new BlockTest(Material.IRON).setRegistryName(MGServerUtility.MODID,
+	public static Block OOD_TELEPORT_BLOCK = new BlockOODTereporter(Material.ANVIL)
+			.setRegistryName(MGServerUtility.MODID,
+					"ood_tereporter")
+			.setHardness(1.5f).setResistance(3).setCreativeTab(MODCreativeTab.MGTAB)
+			.setUnlocalizedName("ood_tereporter");
+
+	public static Block TEST_BLOCK = new Block(Material.IRON).setRegistryName(MGServerUtility.MODID,
 			"test_block").setHardness(1.5f).setResistance(3).setCreativeTab(MODCreativeTab.MGTAB)
 			.setUnlocalizedName("test_block");
 
@@ -58,7 +64,8 @@ public class MODBlocks {
 				TEST_BLOCK,
 				OOD_BLOCK,
 				NAQUADAH_ORE,
-				VOID_BLOCK
+				VOID_BLOCK,
+				OOD_TELEPORT_BLOCK
 
 		));
 		return l;

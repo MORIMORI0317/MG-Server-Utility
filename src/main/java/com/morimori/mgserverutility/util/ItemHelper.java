@@ -41,4 +41,8 @@ public class ItemHelper {
 		return item;
 	}
 
+	public static void addPlayerItem(EntityPlayer playerIn, Item item) {
+		addPlayerItem(playerIn, new ItemStack(item));
+	}
+
 }

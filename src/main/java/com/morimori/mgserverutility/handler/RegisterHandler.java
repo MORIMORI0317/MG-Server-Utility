@@ -3,12 +3,14 @@ package com.morimori.mgserverutility.handler;
 import com.morimori.mgserverutility.MGServerUtility;
 import com.morimori.mgserverutility.MGSoundEvents;
 import com.morimori.mgserverutility.blocks.MODBlocks;
+import com.morimori.mgserverutility.enchants.MGEnchants;
 import com.morimori.mgserverutility.items.MODItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.renderer.block.statemap.StateMapperBase;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.util.SoundEvent;
@@ -23,31 +25,21 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 @EventBusSubscriber(modid = MGServerUtility.MODID)
 
 public class RegisterHandler {
+
+	@SubscribeEvent
+	public static void registerEnchantment(RegistryEvent.Register<Enchantment> e) {
+		MGEnchants.registerEnchantmentList().forEach(i -> {
+			MGServerUtility.LOGGER.info("Registing Enchantment " + i.getRegistryName());
+			e.getRegistry().register(i);
+		});
+	}
+
 	@SubscribeEvent
 	public static void registerSounds(RegistryEvent.Register<SoundEvent> e) {
-		e.getRegistry().registerAll(
-				MGSoundEvents.CYCLOPS_MUSIC,
-				MGSoundEvents.HOLOGRAM_MUSIC,
-				MGSoundEvents.MARENOL_MUSIC,
-				MGSoundEvents.YATTAZE_MUSIC,
-				MGSoundEvents.MOPEMOPE_MUSIC,
-				MGSoundEvents.BREAK_THE_NIGHT_ARAN_REMIX_REDALICE_MUSIC,
-				MGSoundEvents.CHAOS_MUSIC,
-				MGSoundEvents.SNAKE_EATER_MUSIC,
-				MGSoundEvents.TAKARAZIMA_MUSIC,
-				MGSoundEvents.YSYOU_MUSIC,
-				MGSoundEvents.HAKUSINKARATEBU_MUSIC,
-				MGSoundEvents.YJINTABYU_MUSIC,
-				MGSoundEvents.KONGYO_MUSIC,
-				MGSoundEvents.IEVAN_POLKKA_MUSIC,
-				MGSoundEvents.EVANGELION_8TH_APOSTLE_MUSIC,
-				MGSoundEvents.SOVIET_MARCH_MUSIC,
-				MGSoundEvents.PEPSIMAN_THEME_MUSIC,
-				MGSoundEvents.AWAKENING_MUSIC,
-				MGSoundEvents.KEIZOKU_HIGH_SCHOOL,
-				MGSoundEvents.TEREPORTOUTOOFDIMENTION
-
-		);
+		MGSoundEvents.registerSoundEventList().forEach(i -> {
+			MGServerUtility.LOGGER.info("Registing SoundEvent " + i.getRegistryName());
+			e.getRegistry().register(i);
+		});
 
 	}
 

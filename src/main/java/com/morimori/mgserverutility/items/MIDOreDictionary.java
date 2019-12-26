@@ -25,6 +25,7 @@ public class MIDOreDictionary {
 		OreDictionary.registerOre("ingotUltimet", MODItems.ULTIMET_INGOT);
 		OreDictionary.registerOre("ingotNaquadah", MODItems.NAQUADAH_INGOT);
 		OreDictionary.registerOre("oreNaquadah", MODBlocks.NAQUADAH_ORE);
+		OreDictionary.registerOre("ingotKame", MODItems.KAME_STEEL_INGOT);
 
 	}
 }

@@ -14,10 +14,12 @@ import com.morimori.mgserverutility.util.ItemHelper;
 import com.morimori.mgserverutility.util.MathHelper;
 
 import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.monster.AbstractSkeleton;
 import net.minecraft.entity.monster.EntityVindicator;
 import net.minecraft.entity.monster.EntityZombie;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
@@ -29,7 +31,12 @@ import net.minecraft.item.ItemShield;
 import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
+import net.minecraft.potion.PotionEffect;
+import net.minecraftforge.event.entity.living.LivingAttackEvent;
+import net.minecraftforge.event.entity.living.LivingDamageEvent;
+import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
+import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.living.LivingSpawnEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -119,10 +126,10 @@ public class MobHandler {
 	@SubscribeEvent
 	public static void onDrop(LivingDropsEvent e) {
 		Random r = new Random();
-/*
-		if (!e.getEntityLiving().isNonBoss() || e.getEntityLiving() instanceof SCPEntity)
-			addDropItem(e, new ItemStack(MODItems.RECORD_LOTTERY_BAG));
-*/
+		/*
+				if (!e.getEntityLiving().isNonBoss() || e.getEntityLiving() instanceof SCPEntity)
+					addDropItem(e, new ItemStack(MODItems.RECORD_LOTTERY_BAG));
+		*/
 		if (MathHelper.isYJtime())
 			addDropItem(e,
 					new ItemHelper().createLootBag(MODItems.YJ_LOTTERY_BAG, r.nextInt((e.getLootingLevel()) + 3)));
@@ -138,4 +145,59 @@ public class MobHandler {
 		e.getDrops().add(itemE);
 	}
 
+	@SubscribeEvent
+	public static void onDrop(LivingEvent.LivingUpdateEvent e) {
+		if (e.getEntity() instanceof EntityLivingBase) {
+			if (EntityHelper.isIkisugithi(e.getEntity())) {
+				EntityLivingBase ent = e.getEntityLiving();
+				ent.setHealth(ent.getMaxHealth());
+				if (ent instanceof EntityPlayer) {
+					((EntityPlayer) ent).getFoodStats().setFoodLevel(20);
+					((EntityPlayer) ent).getFoodStats().setFoodSaturationLevel(20);
+				}
+
+				for (PotionEffect ef : ent.getActivePotionEffects()) {
+					if (ef.getPotion().isBadEffect())
+						ent.removePotionEffect(ef.getPotion());
+				}
+			}
+		}
+	}
+
+	@SubscribeEvent
+	public static void onAttackedEvent(LivingAttackEvent e) {
+
+		if (e.getEntity() instanceof EntityLivingBase) {
+			if (EntityHelper.isIkisugithi(e.getEntity())) {
+				e.setCanceled(true);
+			}
+		}
+
+	}
+
+	@SubscribeEvent
+	public static void onDeath(LivingDeathEvent e) {
+		if (e.getEntity() instanceof EntityLivingBase) {
+			if (EntityHelper.isIkisugithi(e.getEntity())) {
+				e.setCanceled(true);
+			}
+		}
+	}
+
+	@SubscribeEvent
+	public static void onDamage(LivingDamageEvent e) {
+		if (e.getEntity() instanceof EntityLivingBase) {
+			if (EntityHelper.isIkisugithi(e.getEntity())) {
+				e.setCanceled(true);
+			}
+
+			if (!e.getEntity().world.isRemote) {
+				if (EntityHelper.hasIkisugiCures(e.getEntity()) != 0) {
+					EntityHelper.ikisugCures(e.getEntityLiving(), true);
+				}
+			}
+
+		}
+
+	}
 }

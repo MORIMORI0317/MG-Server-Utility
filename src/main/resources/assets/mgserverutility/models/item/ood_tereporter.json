@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mgserverutility:blocks/out_of_dimention"
+  }
+}

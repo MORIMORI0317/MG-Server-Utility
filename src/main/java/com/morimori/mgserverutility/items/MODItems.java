@@ -8,6 +8,7 @@ import com.morimori.mgserverutility.MGServerUtility;
 import com.morimori.mgserverutility.MGSoundEvents;
 import com.morimori.mgserverutility.MODCreativeTab;
 
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 
 public class MODItems {
@@ -31,6 +32,10 @@ public class MODItems {
 	public static Item NAQUADAH_INGOT = new Item()
 			.setRegistryName(MGServerUtility.MODID, "naquadah_ingot")
 			.setUnlocalizedName("naquadah_ingot")
+			.setCreativeTab(MODCreativeTab.MGTAB);
+	public static Item KAME_STEEL_INGOT = new Item()
+			.setRegistryName(MGServerUtility.MODID, "kame_steel_ingot")
+			.setUnlocalizedName("kame_steel_ingot")
 			.setCreativeTab(MODCreativeTab.MGTAB);
 
 	public static Item VOID_INGOT = new Item()
@@ -149,6 +154,39 @@ public class MODItems {
 			.setUnlocalizedName("test")
 			.setCreativeTab(MODCreativeTab.MGTAB);
 
+	public static Item IKISUGINITHI_SWORD = new ItemIkisuginithiSword(MGToolMaterial.iKISUGINITHI)
+			.setRegistryName(MGServerUtility.MODID, "ikisuginithi_sword")
+			.setUnlocalizedName("ikisuginithi_sword")
+			.setCreativeTab(MODCreativeTab.MGTAB);
+
+	public static Item iKISUGINITHI_HELMET = new ItemIkisuginithiAromer(MGArmorMaterial.IKISUGINITHI, 1,
+			EntityEquipmentSlot.HEAD)
+					.setRegistryName(MGServerUtility.MODID, "ikisuginithi_helmet")
+					.setUnlocalizedName("ikisuginithi_helmet")
+					.setCreativeTab(MODCreativeTab.MGTAB);
+
+	public static Item iKISUGINITHI_CHESTPLATE = new ItemIkisuginithiAromer(MGArmorMaterial.IKISUGINITHI, 1,
+			EntityEquipmentSlot.CHEST)
+					.setRegistryName(MGServerUtility.MODID, "ikisuginithi_chestplate")
+					.setUnlocalizedName("ikisuginithi_chestplate")
+					.setCreativeTab(MODCreativeTab.MGTAB);
+
+	public static Item iKISUGINITHI_LEGGINGS = new ItemIkisuginithiAromer(MGArmorMaterial.IKISUGINITHI, 2,
+			EntityEquipmentSlot.LEGS)
+					.setRegistryName(MGServerUtility.MODID, "ikisuginithi_leggings")
+					.setUnlocalizedName("ikisuginithi_leggings")
+					.setCreativeTab(MODCreativeTab.MGTAB);
+
+	public static Item iKISUGINITHI_BOOTS = new ItemIkisuginithiAromer(MGArmorMaterial.IKISUGINITHI, 1,
+			EntityEquipmentSlot.FEET)
+					.setRegistryName(MGServerUtility.MODID, "ikisuginithi_boots")
+					.setUnlocalizedName("ikisuginithi_boots")
+					.setCreativeTab(MODCreativeTab.MGTAB);
+
+	public static Item ITEM_LOTTERY_BAG = new ItemItemLotteryLootBag("item", LootBag.GUN_LOOT)
+			.setRegistryName(MGServerUtility.MODID, "item_lottery_loot_bag")
+			.setUnlocalizedName("item_lottery_loot_bag").setCreativeTab(MODCreativeTab.MGTAB);
+
 	public static List<Item> registerItemList() {
 		List<Item> l = new ArrayList<Item>();
 		l.addAll(Arrays.asList(
@@ -174,6 +212,7 @@ public class MODItems {
 				TUNGSTEN_STEEL_INGOT,
 				ULTIMET_INGOT,
 				NAQUADAH_INGOT,
+				KAME_STEEL_INGOT,
 				KONGYO_RECORD,
 				IEVAN_POLKKA_RECORD,
 				EVANGELION_8TH_APOSTLE_RECORD,
@@ -183,7 +222,14 @@ public class MODItems {
 				KEIZOKU_HIGH_RECORD,
 				BLADE_LOTTERY_BAG,
 				HEAD_LOTTERY_BAG,
-				GUN_LOTTERY_BAG
+				GUN_LOTTERY_BAG,
+				ITEM_LOTTERY_BAG,
+
+				IKISUGINITHI_SWORD,
+				iKISUGINITHI_HELMET,
+				iKISUGINITHI_CHESTPLATE,
+				iKISUGINITHI_LEGGINGS,
+				iKISUGINITHI_BOOTS
 
 		));
 
@@ -212,7 +258,13 @@ public class MODItems {
 				SOVIET_MARCH_RECORD,
 				PEPSIMAN_THEME_RECORD,
 				AWAKENING_RECORD,
-				KEIZOKU_HIGH_RECORD
+				KEIZOKU_HIGH_RECORD,
+				IKISUGINITHI_SWORD,
+				iKISUGINITHI_HELMET,
+				iKISUGINITHI_CHESTPLATE,
+				iKISUGINITHI_LEGGINGS,
+				iKISUGINITHI_BOOTS,
+				KAME_STEEL_INGOT
 
 		));
 

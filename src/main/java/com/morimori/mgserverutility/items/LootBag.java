@@ -6,8 +6,13 @@ import java.util.Map;
 import com.morimori.mgserverutility.util.FileLoader;
 import com.morimori.mgserverutility.util.ItemHelper;
 
+import nc.item.NCItemRecord;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
+import svenhjol.charm.tweaks.item.CharmItemRecord;
 import techguns.TGuns;
 
 public class LootBag {
@@ -34,6 +39,33 @@ public class LootBag {
 		RECORD_LOOT.put(new ItemStack(MODItems.PEPSIMAN_THEME_RECORD), 2);
 		RECORD_LOOT.put(new ItemStack(MODItems.AWAKENING_RECORD), 3);
 		RECORD_LOOT.put(new ItemStack(MODItems.KEIZOKU_HIGH_RECORD), 3);
+		/*
+				RECORD_LOOT.put(new ItemStack(NCItems.record_end_of_the_world), 30);
+				RECORD_LOOT.put(new ItemStack(NCItems.record_hyperspace), 30);
+				RECORD_LOOT.put(new ItemStack(NCItems.record_money_for_nothing), 30);
+				RECORD_LOOT.put(new ItemStack(NCItems.record_wanderer), 30);*/
+
+		for (Item i : ForgeRegistries.ITEMS) {
+			if (i instanceof CharmItemRecord)
+				RECORD_LOOT.put(new ItemStack(i), 40);
+
+			if (i instanceof NCItemRecord)
+				RECORD_LOOT.put(new ItemStack(i), 30);
+
+		}
+
+		RECORD_LOOT.put(new ItemStack(Items.RECORD_11), 50);
+		RECORD_LOOT.put(new ItemStack(Items.RECORD_13), 50);
+		RECORD_LOOT.put(new ItemStack(Items.RECORD_BLOCKS), 50);
+		RECORD_LOOT.put(new ItemStack(Items.RECORD_CAT), 50);
+		RECORD_LOOT.put(new ItemStack(Items.RECORD_CHIRP), 50);
+		RECORD_LOOT.put(new ItemStack(Items.RECORD_FAR), 50);
+		RECORD_LOOT.put(new ItemStack(Items.RECORD_MALL), 50);
+		RECORD_LOOT.put(new ItemStack(Items.RECORD_MELLOHI), 50);
+		RECORD_LOOT.put(new ItemStack(Items.RECORD_STAL), 50);
+		RECORD_LOOT.put(new ItemStack(Items.RECORD_STRAD), 50);
+		RECORD_LOOT.put(new ItemStack(Items.RECORD_WAIT), 50);
+		RECORD_LOOT.put(new ItemStack(Items.RECORD_WARD), 50);
 
 		YJ_LOOT.put(new ItemStack(MODItems.YSYOU_RECORD), 2);
 		YJ_LOOT.put(new ItemStack(MODItems.HAKUSINKARATEBU_RECORD), 2);
@@ -87,16 +119,19 @@ public class LootBag {
 		GUN_LOOT.put(new ItemStack(TGuns.guidedmissilelauncher), 7);
 		GUN_LOOT.put(new ItemStack(TGuns.miningdrill), 6);
 		GUN_LOOT.put(new ItemStack(TGuns.tfg), 1);
-		ItemStack nuker = new ItemStack(TGuns.rocketlauncher);
-		NBTTagCompound nukertag = new NBTTagCompound();
-		NBTTagCompound nukernametag = new NBTTagCompound();
-		nukernametag.setString("LocName", "item.nukel.name");
-		nukertag.setTag("display", nukernametag);
-		nukertag.setString("ammovariant", "nuke");
-		nukertag.setShort("ammo", (short) 1);
-		nukertag.setByte("camo", (byte) 0);
-		nuker.setTagCompound(nukertag);
-		GUN_LOOT.put(nuker, 1);
+		{
+			ItemStack nuker = new ItemStack(TGuns.rocketlauncher);
+			NBTTagCompound nukertag = new NBTTagCompound();
+			NBTTagCompound nukernametag = new NBTTagCompound();
+			nukernametag.setString("LocName", "item.nukel.name");
+			nukertag.setTag("display", nukernametag);
+			nukertag.setString("ammovariant", "nuke");
+			nukertag.setShort("ammo", (short) 1);
+			nukertag.setByte("camo", (byte) 0);
+			nuker.setTagCompound(nukertag);
+			GUN_LOOT.put(nuker, 1);
+		}
 
 	}
+
 }

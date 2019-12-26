@@ -13,6 +13,12 @@ item.head_lottery_loot_bag.name=頭のルートバッグ
 item.gun_lottery_loot_bag.name=銃のルートバッグ
 
 item.naquadah_ingot.name=ナクアダインゴット
+item.kame_steel_ingot.name=カメスチール
+item.ikisuginithi_sword.name=イキスギティのソード
+item.ikisuginithi_helmet.name=イキスギティのヘルメット
+item.ikisuginithi_chestplate.name=イキスギティのチェストプレート
+item.ikisuginithi_leggings.name=イキスギティのレギンス
+item.ikisuginithi_boots.name=イキスギティのブーツ
 
 item.nukel.name=核ランチャー
 
@@ -35,20 +41,25 @@ item.record.pepsiman_theme.desc=ペプシマンのテーマ
 item.record.awakening.desc=覚醒
 item.record.keizoku_high_school.desc=継続高校 Säkkijärven Polkka
 
+
+
+
+
 item.blade_lottery_loot_bag.following.desc=以下のアイテムが含まれます:
 item.blade_lottery_loot_bag.cont.desc=%s個入り
-
+item.blade_lottery_loot_bag.item.desc=ランダムにアイテムが出ます
 
 #Blades#
 item.flammpfeil.slashblade.named.mgsvu.test.name=テス刀
 item.flammpfeil.slashblade.named.mgsvu.yj.name=絶頂刀「イキスギ」
-item.flammpfeil.slashblade.named.mgsvu.nullriot.name=ヌルリオットの刀
+item.flammpfeil.slashblade.named.mgsvu.nullriot.name=愛Null者の刀
 
 #Blocks#
 tile.vanadium_steel_block.name=バナジウム鋼ブロック
 tile.out_of_dimension_block.name=オウトオブディメンションブロック
 tile.naquadah_ore.name=ナクアダ鉱石
 tile.void_block.name=虚無ブロック
+tile.ood_tereporter.name=オウトオブディメンションポータル
 
 
 #Fluids#
@@ -63,6 +74,33 @@ fluid.tconstruct.naquadah.name=溶けたナクアダ
 
 #Sounds#
 mgserverutility.subtitle.tereportoutoofdimention=次元を外れる
+mgserverutility.subtitle.nna=ンアッー！（絶頂）
+mgserverutility.subtitle.yarimasunexe=やりますねぇ！！
+mgserverutility.subtitle.onaon=オォン！アォン！
+mgserverutility.subtitle.mazuutisaxa=まずうちさぁ…屋上あるんだけど…焼いてかない？
+mgserverutility.subtitle.kataku=硬くなってんぜ
+mgserverutility.subtitle.fookimatii=foo↑ 気持ちい～
+mgserverutility.subtitle.dedemasuyo=で、でますよ...
+mgserverutility.subtitle.osuonegai=オッスお願いしまーす
+mgserverutility.subtitle.ikisugi=イキスギィ！
+mgserverutility.subtitle.buttipa=ブッチッパ
+mgserverutility.subtitle.nuwatikareta=ぬわああああん疲れたもおおおおおおおおおん
+mgserverutility.subtitle.114514=いいよ！こいよ！
+mgserverutility.subtitle.nijuyonsai=24歳
+mgserverutility.subtitle.on=オォン！
+mgserverutility.subtitle.za=アー
+mgserverutility.subtitle.hun=フン
+mgserverutility.subtitle.syu=シュー
+mgserverutility.subtitle.yokuwakaranakattadesu=よくわからなかったです
+mgserverutility.subtitle.gakuseidesu=学生です
+mgserverutility.subtitle.dasoutoomoeba=出そうと思えば
+mgserverutility.subtitle.taizyuandsintyou=身長が170cm、体重が74kg
+mgserverutility.subtitle.nu=ヌッ
+mgserverutility.subtitle.horahorahora=ホラホラホラホラ
+mgserverutility.subtitle.fa=ファッ!?
+
+#Enchantments#
+enchantment.ikisugi_curse=イキスギの呪い
 
 
 #Materials#

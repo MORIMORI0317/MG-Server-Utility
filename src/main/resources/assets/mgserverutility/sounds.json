@@ -155,5 +155,125 @@
     "category": "ambient",
     "subtitle": "mgserverutility.subtitle.tereportoutoofdimention",
     "sounds": [ "mgserverutility:tereportoutoofdimention" ]
-  }
+  },
+  "nna": {
+    "category": "voice",
+    "subtitle": "mgserverutility.subtitle.nna",
+    "sounds": [ "mgserverutility:yj/nna" ]
+  },
+"dedemasuyo": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.dedemasuyo",
+ "sounds": [ "mgserverutility:yj/dedemasuyo" ]
+},
+ "fookimatii": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.fookimatii",
+ "sounds": [ "mgserverutility:yj/fookimatii" ]
+},
+"ikisugi": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.ikisugi",
+ "sounds": [ "mgserverutility:yj/ikisugi" ]
+},
+ "osuonegai": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.osuonegai",
+ "sounds": [ "mgserverutility:yj/osuonegai" ]
+},
+ "nuwatikareta": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.nuwatikareta",
+ "sounds": [ "mgserverutility:yj/nuwatikareta" ]
+},
+"onaon": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.onaon",
+ "sounds": [ "mgserverutility:yj/onaon" ]
+},
+"mazuutisaxa": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.mazuutisaxa",
+ "sounds": [ "mgserverutility:yj/mazuutisaxa" ]
+},
+ "kataku": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.kataku",
+ "sounds": [ "mgserverutility:yj/kataku" ]
+},
+  "buttipa": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.buttipa",
+ "sounds": [ "mgserverutility:yj/buttipa" ]
+},
+"yarimasunexe": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.yarimasunexe",
+ "sounds": [ "mgserverutility:yj/yarimasunexe" ]
+},
+"114514": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.114514",
+ "sounds": [ "mgserverutility:yj/114514" ]
+},
+"nijuyonsai": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.nijuyonsai",
+ "sounds": [ "mgserverutility:yj/nijuyonsai" ]
+},
+"on": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.on",
+ "sounds": [ "mgserverutility:yj/on" ]
+},
+"za": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.za",
+ "sounds": [ "mgserverutility:yj/za" ]
+},
+"hun": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.hun",
+ "sounds": [ "mgserverutility:yj/hun" ]
+},
+"syu": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.syu",
+ "sounds": [ "mgserverutility:yj/syu" ]
+},
+"yokuwakaranakattadesu": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.yokuwakaranakattadesu",
+ "sounds": [ "mgserverutility:yj/yokuwakaranakattadesu" ]
+},
+"gakuseidesu": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.gakuseidesu",
+ "sounds": [ "mgserverutility:yj/gakuseidesu" ]
+},
+"dasoutoomoeba": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.dasoutoomoeba",
+ "sounds": [ "mgserverutility:yj/dasoutoomoeba" ]
+},
+"taizyuandsintyou": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.taizyuandsintyou",
+ "sounds": [ "mgserverutility:yj/taizyuandsintyou" ]
+},
+"nu": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.nu",
+ "sounds": [ "mgserverutility:yj/nu" ]
+},
+"horahorahora": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.horahorahora",
+ "sounds": [ "mgserverutility:yj/horahorahora" ]
+},
+"fa": {
+ "category": "voice",
+ "subtitle": "mgserverutility.subtitle.fa",
+ "sounds": [ "mgserverutility:yj/fa" ]
+}
 }

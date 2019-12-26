@@ -41,7 +41,8 @@ public class TraitVoid extends AbstractTrait {
 						0, 0);
 			}
 
-			MGTereporter.of(target.getPosition().getX(), 110,target.getPosition().getZ(), MGConfig.OOD_ID, target).start();
+			MGTereporter.of(target.getPosition().getX(), 110, target.getPosition().getZ(), MGConfig.OOD_ID, target)
+					.start();
 
 		}
 
