@@ -73,6 +73,14 @@ public class RenderHandler {
 			}
 		}, MODItems.iKISUGINITHI_BOOTS);
 
+		Color.registerItemColorHandler(new IItemColor() {
+			@Override
+			public int colorMultiplier(ItemStack stack, int tintIndex) {
+
+				return r.nextInt(Integer.MAX_VALUE);
+			}
+		}, MODItems.IKISUGITHI_TOTEM);
+
 	}
 	/*
 		@SubscribeEvent

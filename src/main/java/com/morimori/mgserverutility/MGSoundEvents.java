@@ -79,6 +79,25 @@ public class MGSoundEvents {
 			new ResourceLocation(MGServerUtility.MODID, "tereportoutoofdimention"))
 					.setRegistryName(MGServerUtility.MODID, "tereportoutoofdimention");
 
+	public static SoundEvent ENDUREEMPTINESS = new SoundEvent(
+			new ResourceLocation(MGServerUtility.MODID, "endureemptiness"))
+					.setRegistryName(MGServerUtility.MODID, "endureemptiness");
+
+	public static SoundEvent FIGHTFORQUIESCENCE = new SoundEvent(
+			new ResourceLocation(MGServerUtility.MODID, "fightforquiescence"))
+					.setRegistryName(MGServerUtility.MODID, "fightforquiescence");
+
+	public static SoundEvent HARUNOKOE = new SoundEvent(new ResourceLocation(MGServerUtility.MODID, "harunokoe"))
+			.setRegistryName(MGServerUtility.MODID, "harunokoe");
+
+	public static SoundEvent HUKIGENNAKAZITU = new SoundEvent(
+			new ResourceLocation(MGServerUtility.MODID, "hukigennakazitu"))
+					.setRegistryName(MGServerUtility.MODID, "hukigennakazitu");
+
+	public static SoundEvent HUNNYOURESUTORAN = new SoundEvent(
+			new ResourceLocation(MGServerUtility.MODID, "hunnyouresutoran"))
+					.setRegistryName(MGServerUtility.MODID, "hunnyouresutoran");
+
 	public static SoundEvent NNA = new SoundEvent(new ResourceLocation(MGServerUtility.MODID, "nna"))
 			.setRegistryName(MGServerUtility.MODID, "nna");//ンアー
 	public static SoundEvent YARIMASUNEXE = new SoundEvent(new ResourceLocation(MGServerUtility.MODID, "yarimasunexe"))
@@ -137,7 +156,7 @@ public class MGSoundEvents {
 				CYCLOPS_MUSIC, YARIMASUNEXE, ONAON, MAZUUTISAXA, KATAKU, NUWATIKARETA, BUTTIPA, IKISUGI, OSUONEGAI,
 				DEDEMASUYO, FOOKIMATII, IIYOKOIYO, NIJUYONSAI, ON, ZA,
 				HUN, SYU, YOKUWAKARANAKATTADESU, GAKUSEIDESU, DASOUTOOMOEBA, TAIZYANDSINTYOUGA, NU, HORAHORAHORA, FA,
-				HOLOGRAM_MUSIC,
+				HOLOGRAM_MUSIC, ENDUREEMPTINESS, FIGHTFORQUIESCENCE, HARUNOKOE, HUKIGENNAKAZITU, HUNNYOURESUTORAN,
 				MARENOL_MUSIC,
 				YATTAZE_MUSIC,
 				MOPEMOPE_MUSIC,

@@ -33,7 +33,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class MGServerUtility {
 	public static final String MODID = "mgserverutility";
 	public static final String NAME = "MG Server Utility";
-	public static final String VERSION = "Build 13";
+	public static final String VERSION = "Build 14";
 
 	public static Logger LOGGER;
 

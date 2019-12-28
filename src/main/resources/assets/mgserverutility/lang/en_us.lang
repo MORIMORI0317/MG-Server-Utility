@@ -8,6 +8,7 @@ item.inm_lottery_loot_bag.name=Inm Loot Bag
 item.blade_lottery_loot_bag.name=Blade Loot Bag
 item.head_lottery_loot_bag.name=Head Loot Bag
 item.gun_lottery_loot_bag.name=Gun Loot Bag
+item.item_lottery_loot_bag.name=Item Loot Bag
 
 
 item.naquadah_alloy_ingot.name=Naquadah Alloy Ingot
@@ -15,6 +16,7 @@ item.tungsten_steel_ingot.name=Tungsten Steel Ingot
 item.ultimet_ingot.name=Ultimet Ingot
 item.naquadah_ingot.name=Naquadah Ingot
 item.kame_steel_ingot.name=Kame Steel Ingot
+item.apple_of_darkness.name=Apple of Darkness
 
 
 item.ikisuginithi_sword.name=Ikisuginithi Sword
@@ -22,6 +24,8 @@ item.ikisuginithi_helmet.name=Ikisuginithi Helmet
 item.ikisuginithi_chestplate.name=Ikisuginithi Chestplate
 item.ikisuginithi_leggings.name=Ikisuginithi Leggings
 item.ikisuginithi_boots.name=Ikisuginithi Boots
+item.ikisuginithi_totem.name=Totem of Ikisuginithi
+
 
 item.nukel.name=Nuke Launcher
 
@@ -44,6 +48,13 @@ item.record.soviet_march.desc=Soviet March
 item.record.pepsiman_theme.desc=Pepsiman Theme
 item.record.awakening.desc=Awakening
 item.record.keizoku_high_school.desc=Keizoku High School Säkkijärven Polkka
+item.record.endureemptiness.desc=EndureEmptiness
+item.record.fightforquiescence.desc=FightforQuiescence
+item.record.harunokoe.desc=Frühlingsstimmen
+item.record.hukigennakazitu.desc=Chapter 6 Grumpy Fruit
+item.record.hunnyouresutoran.desc=Manure Restaurant
+
+
 
 item.blade_lottery_loot_bag.following.desc=Contains the following items:
 item.blade_lottery_loot_bag.cont.desc=%s pieces
@@ -127,6 +138,8 @@ modifier.katasugi.desc=§oKatasugiru Pi§r\nToo painful.
 
 #menu#
 menu.joinserver=Join SCP Server
+option.isnotise=Notification: %s
+
 
 #CreativeTabs#
 itemGroup.mg_scp_tab=MG SERVER TAB

@@ -36,7 +36,7 @@ public class MODBlocks {
 			.setUnlocalizedName("ood_tereporter");
 
 	public static Block TEST_BLOCK = new Block(Material.IRON).setRegistryName(MGServerUtility.MODID,
-			"test_block").setHardness(1.5f).setResistance(3).setCreativeTab(MODCreativeTab.MGTAB)
+			"test_block").setHardness(1.5f).setResistance(3)/*MGTAB*/
 			.setUnlocalizedName("test_block");
 
 	public static Block MOLTEN_TELEKILL_ALLOY_BLOCK = new BlockTinkerFluid(MODFluids.MOLTEN_TELEKILL_ALLOY,

@@ -151,6 +151,46 @@
       }
     ]
   },
+     "hunnyouresutoran": {
+    "sounds": [
+      {
+        "name": "mgserverutility:hunnyouresutoran",
+        "stream": true
+      }
+    ]
+  },
+     "hukigennakazitu": {
+    "sounds": [
+      {
+        "name": "mgserverutility:hukigennakazitu",
+        "stream": true
+      }
+    ]
+  },
+     "harunokoe": {
+    "sounds": [
+      {
+        "name": "mgserverutility:harunokoe",
+        "stream": true
+      }
+    ]
+  },
+     "fightforquiescence": {
+    "sounds": [
+      {
+        "name": "mgserverutility:fightforquiescence",
+        "stream": true
+      }
+    ]
+  },
+     "endureemptiness": {
+    "sounds": [
+      {
+        "name": "mgserverutility:endureemptiness",
+        "stream": true
+      }
+    ]
+  },
   "tereportoutoofdimention": {
     "category": "ambient",
     "subtitle": "mgserverutility.subtitle.tereportoutoofdimention",

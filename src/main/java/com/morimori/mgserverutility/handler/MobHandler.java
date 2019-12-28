@@ -31,19 +31,16 @@ import net.minecraft.item.ItemShield;
 import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
-import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
-import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.living.LivingSpawnEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 @EventBusSubscriber(modid = MGServerUtility.MODID)
-
 public class MobHandler {
 
 	private static HashMap<ItemArmor.ArmorMaterial, Item> Head_map = new HashMap<ItemArmor.ArmorMaterial, Item>();
@@ -145,25 +142,26 @@ public class MobHandler {
 		e.getDrops().add(itemE);
 	}
 
-	@SubscribeEvent
-	public static void onDrop(LivingEvent.LivingUpdateEvent e) {
-		if (e.getEntity() instanceof EntityLivingBase) {
-			if (EntityHelper.isIkisugithi(e.getEntity())) {
-				EntityLivingBase ent = e.getEntityLiving();
-				ent.setHealth(ent.getMaxHealth());
-				if (ent instanceof EntityPlayer) {
-					((EntityPlayer) ent).getFoodStats().setFoodLevel(20);
-					((EntityPlayer) ent).getFoodStats().setFoodSaturationLevel(20);
-				}
+	/*
+		@SubscribeEvent
+		public static void onTick(LivingEvent.LivingUpdateEvent e) {
+			if (e.getEntity() instanceof EntityLivingBase) {
+				if (EntityHelper.isIkisugithi(e.getEntity())) {
+					EntityLivingBase ent = e.getEntityLiving();
+					ent.setHealth(ent.getMaxHealth());
+					if (ent instanceof EntityPlayer) {
+						((EntityPlayer) ent).getFoodStats().setFoodLevel(20);
+						((EntityPlayer) ent).getFoodStats().setFoodSaturationLevel(20);
+					}
 
-				for (PotionEffect ef : ent.getActivePotionEffects()) {
-					if (ef.getPotion().isBadEffect())
-						ent.removePotionEffect(ef.getPotion());
+					for (PotionEffect ef : ent.getActivePotionEffects()) {
+						if (ef.getPotion().isBadEffect())
+							ent.removePotionEffect(ef.getPotion());
+					}
 				}
 			}
 		}
-	}
-
+	*/
 	@SubscribeEvent
 	public static void onAttackedEvent(LivingAttackEvent e) {
 
@@ -177,11 +175,15 @@ public class MobHandler {
 
 	@SubscribeEvent
 	public static void onDeath(LivingDeathEvent e) {
-		if (e.getEntity() instanceof EntityLivingBase) {
-			if (EntityHelper.isIkisugithi(e.getEntity())) {
+
+		if (e.getEntityLiving() instanceof EntityPlayer) {
+			EntityPlayer pl = (EntityPlayer) e.getEntityLiving();
+			if (pl.inventory.hasItemStack(new ItemStack(MODItems.IKISUGITHI_TOTEM))) {
+				pl.setHealth(1.0F);
 				e.setCanceled(true);
 			}
 		}
+
 	}
 
 	@SubscribeEvent

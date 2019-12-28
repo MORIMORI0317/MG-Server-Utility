@@ -7,6 +7,9 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class MGConfig {
 	public static Configuration config;
 	public static String ServerIp;
+	public static String TrayIconURL;
+	public static String TrayIconName;
+	public static boolean isEffectTray;
 	public static boolean isMultibuttun;
 	public static int OOD_ID;
 	public static int IKISUGI_CURES_ID;
@@ -40,6 +43,20 @@ public class MGConfig {
 		isMultibuttun = config
 				.get("general_client", "Effectiveness", false,
 						"Whether to display the multi-play button on the title screen.")
+				.getBoolean();
+
+		TrayIconURL = config
+				.get("general_client", "TrayURL", "https://www.dropbox.com/s/bpq9hkz354gp6we/tray_icon.jpg?dl=1",
+						"Toray URL")
+				.getString();
+
+		TrayIconName = config
+				.get("general_client", "TrayIcon", "tray_icon.png", "Toray Icon")
+				.getString();
+
+		isEffectTray = config
+				.get("general_client", "TrayEffectiveness", false,
+						"Tray Effectiveness")
 				.getBoolean();
 
 		if (config.hasChanged())

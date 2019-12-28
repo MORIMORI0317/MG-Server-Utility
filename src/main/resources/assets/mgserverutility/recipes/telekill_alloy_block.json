@@ -8,11 +8,13 @@
   ],
 "key": {
     "C": {
-      "type": "forge:ore_dict",
-      "ore": "ingotTelekillAlloy"
+     "item": "minecraft:out_of_dimension_block"
+    },
+    "X": {
+      "item": "minecraft:apple"
     }
   },
   "result": {
-    "item": "mgserverutility:telekill_alloy_block"
+    "item": "mgserverutility:apple_of_darkness"
   }
 }

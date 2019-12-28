@@ -24,7 +24,6 @@ public class LootBag {
 	public static Map<ItemStack, Integer> GUN_LOOT = new HashMap<>();
 
 	public static void posInit() {
-		RECORD_LOOT.put(new ItemStack(MODItems.CYCLOPS_RECORD), 3);
 		RECORD_LOOT.put(new ItemStack(MODItems.HOLOGRAM_RECORD), 3);
 		RECORD_LOOT.put(new ItemStack(MODItems.MARENOL_RECORD), 3);
 		RECORD_LOOT.put(new ItemStack(MODItems.MOPEMOPE_RECORD), 3);
@@ -39,11 +38,9 @@ public class LootBag {
 		RECORD_LOOT.put(new ItemStack(MODItems.PEPSIMAN_THEME_RECORD), 2);
 		RECORD_LOOT.put(new ItemStack(MODItems.AWAKENING_RECORD), 3);
 		RECORD_LOOT.put(new ItemStack(MODItems.KEIZOKU_HIGH_RECORD), 3);
-		/*
-				RECORD_LOOT.put(new ItemStack(NCItems.record_end_of_the_world), 30);
-				RECORD_LOOT.put(new ItemStack(NCItems.record_hyperspace), 30);
-				RECORD_LOOT.put(new ItemStack(NCItems.record_money_for_nothing), 30);
-				RECORD_LOOT.put(new ItemStack(NCItems.record_wanderer), 30);*/
+		RECORD_LOOT.put(new ItemStack(MODItems.FIGHTFORQUIESCENCE_RECORD), 3);
+		RECORD_LOOT.put(new ItemStack(MODItems.ENDUREEMPTINESS_RECORD), 3);
+		RECORD_LOOT.put(new ItemStack(MODItems.HARUNOKOE_RECORD), 2);
 
 		for (Item i : ForgeRegistries.ITEMS) {
 			if (i instanceof CharmItemRecord)
@@ -74,6 +71,8 @@ public class LootBag {
 
 		INM_LOOT.put(new ItemStack(MODItems.YJ_LOTTERY_BAG), 1);
 		INM_LOOT.put(new ItemStack(MODItems.YATTAZE_RECORD), 3);
+		INM_LOOT.put(new ItemStack(MODItems.HUKIGENNAKAZITU_RECORD), 3);
+		INM_LOOT.put(new ItemStack(MODItems.HUNNYOURESUTORAN_RECORD), 2);
 		FileLoader.arrangeTextFile("mgsververutility_joinplayerlist.txt");
 		for (String str : FileLoader.loadTextFile("mgsververutility_joinplayerlist.txt")) {
 			HEAD_LOOT.put(ItemHelper.createPlayerHead(str), 1);

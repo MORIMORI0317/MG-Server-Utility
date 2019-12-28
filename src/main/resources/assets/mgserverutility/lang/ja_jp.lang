@@ -11,6 +11,7 @@ item.inm_lottery_loot_bag.name=淫夢のルートバッグ
 item.blade_lottery_loot_bag.name=刀のルートバッグ
 item.head_lottery_loot_bag.name=頭のルートバッグ
 item.gun_lottery_loot_bag.name=銃のルートバッグ
+item.item_lottery_loot_bag.name=アイテムのルートバッグ
 
 item.naquadah_ingot.name=ナクアダインゴット
 item.kame_steel_ingot.name=カメスチール
@@ -19,6 +20,8 @@ item.ikisuginithi_helmet.name=イキスギティのヘルメット
 item.ikisuginithi_chestplate.name=イキスギティのチェストプレート
 item.ikisuginithi_leggings.name=イキスギティのレギンス
 item.ikisuginithi_boots.name=イキスギティのブーツ
+item.ikisuginithi_totem.name=イキスギティのトーテム
+item.apple_of_darkness.name=アップルオブダークネス
 
 item.nukel.name=核ランチャー
 
@@ -40,6 +43,9 @@ item.record.soviet_march.desc=ソビエトマーチ
 item.record.pepsiman_theme.desc=ペプシマンのテーマ
 item.record.awakening.desc=覚醒
 item.record.keizoku_high_school.desc=継続高校 Säkkijärven Polkka
+item.record.harunokoe.desc=春の声
+item.record.hukigennakazitu.desc=第6章 不機嫌な果実
+item.record.hunnyouresutoran.desc=糞尿レストラン
 
 
 
