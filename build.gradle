@@ -13,12 +13,9 @@ buildscript {
 }
 
 repositories {
-    maven {url = "http://dvs1.progwml6.com/files/maven"}
-    maven {url = "https://minecraft.curseforge.com/api/maven/"}
-    maven {url = "https://modmaven.k-4u.nl"}
-    maven {url = "http://maven.k-4u.nl"}
-    maven { name='TCL'; url='https://maven.mcmoddev.com' }
-    maven { name = 'forgelin'; url = 'http://maven.shadowfacts.net' }
+
+
+
     
 }
 
@@ -45,16 +42,6 @@ minecraft {
 
 dependencies {
  
-
-    deobfCompile "slimeknights.mantle:Mantle:${mantle_version}"
-    deobfCompile "slimeknights:TConstruct:${tc_version}"
-
-    deobfProvided "mezz.jei:jei_${mc_version}:${jei_version}:api"
-    runtime "mezz.jei:jei_${mc_version}:${jei_version}"
-    
-    deobfCompile("net.ndrei:tesla-core-lib:${project.teslacorelib_mc_version}-${project.teslacorelib_version}") { changing = true }
-    
-    deobfCompile "industrial-foregoing:industrialforegoing-1.12.2:1.12.13:237"
 
 }
 

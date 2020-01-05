@@ -2,22 +2,22 @@ package com.morimori.mgserverutility.proxy;
 
 import com.morimori.mgserverutility.MGserverUtility;
 
-public class ClientProxy extends CommonProxy {
+public class ServerProxy extends CommonProxy {
 	@Override
 	public void preInit() {
 		super.preInit();
-		MGserverUtility.LOGGER.info("Client PreIniting...");
+		MGserverUtility.LOGGER.info("Server PreIniting...");
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		MGserverUtility.LOGGER.info("Client Initing...");
+		MGserverUtility.LOGGER.info("Server Initing...");
 	}
 
 	@Override
 	public void posInit() {
 		super.posInit();
-		MGserverUtility.LOGGER.info("Client PostIniting...");
+		MGserverUtility.LOGGER.info("Server PostIniting...");
 	}
 }
